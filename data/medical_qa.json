@@ -1,0 +1,67 @@
+[
+  {
+    "id": "q_special_001",
+    "question": "A 40-year-old intravenous drug user presents with a 2-week history of fever, night sweats, and fatigue. He has developed painful red lesions on his fingers and toes over the past few days. On examination, he has a new murmur and splinter hemorrhages are noted.",
+    "answer": "Infective endocarditis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's history of intravenous drug use is a key risk factor for bloodstream infections, which can seed distant sites.",
+          "Constitutional symptoms like fever, night sweats, and fatigue over two weeks indicate a persistent systemic infection.",
+          "Painful red lesions on the fingers and toes suggest septic emboli, often originating from an infected intravascular focus.",
+          "The presence of a new murmur on examination points to acute valvular damage, likely from vegetations.",
+          "Splinter hemorrhages are peripheral signs consistent with microemboli, supporting a diagnosis of endocarditis.",
+          "Combining the risk factor, systemic symptoms, embolic phenomena, and cardiac findings confirms infective endocarditis as the most likely diagnosis.",
+          "Management involves obtaining blood cultures for pathogen identification, performing echocardiography to assess valve involvement, and initiating empiric intravenous antibiotics."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a new murmur and splinter hemorrhages suggests a diagnosis of infective endocarditis, which is a condition characterized by infection of the heart valves.",
+          "The patient's recent history of intravenous drug use puts him at high risk for developing infective endocarditis, as this behavior is a known risk factor for the condition.",
+          "The symptoms of fever, night sweats, and fatigue are non-specific but can be seen in infective endocarditis, particularly in the context of other suggestive findings.",
+          "The development of painful red lesions on the fingers and toes, likely representing Janeway lesions, is a classic physical examination finding in infective endocarditis.",
+          "The combination of these findings, including the patient's high-risk behavior, systemic symptoms, and specific physical examination findings, makes infective endocarditis the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with fever, night sweats, and fatigue in an IV drug user suggests a systemic infection.",
+          "The development of painful red lesions on fingers and toes (likely Osler nodes) and splinter hemorrhages points to peripheral embolic phenomena.",
+          "The finding of a new murmur on exam indicates acute valvular involvement, a key feature of endocarditis.",
+          "While other infections like disseminated gonorrhea or systemic vasculitis could cause fever and skin lesions, they typically do not present with a new murmur and classic peripheral stigmata.",
+          "In an IV drug user, right-sided endocarditis is common, often involving the tricuspid valve, and can present with septic pulmonary emboli, but the peripheral findings here strongly suggest left-sided involvement with systemic embolization.",
+          "The combination of systemic infection, embolic phenomena, and new valvular lesion fulfills the Duke criteria for infective endocarditis, making it the definitive diagnosis.",
+          "Therefore, infective endocarditis is the correct unifying diagnosis explaining all clinical features."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of fever, night sweats, and fatigue, combined with a history of IV drug use, initially suggests a diagnosis of endocarditis or sepsis.",
+          "The presence of painful red lesions on the fingers and toes (Janeway lesions) and splinter hemorrhages are classic signs of infective endocarditis, suggesting that this diagnosis is highly likely.",
+          "However, I must consider other possible causes of these symptoms, such as a systemic infection or vasculitis, to ensure that I am not missing an alternative diagnosis.",
+          "The patient's new murmur, which is likely a new-onset regurgitant murmur, is a key finding that supports the diagnosis of infective endocarditis, as it suggests valve damage or dysfunction.",
+          "The patient's history of IV drug use is a significant risk factor for infective endocarditis, and the presence of these symptoms and physical examination findings makes this diagnosis increasingly likely.",
+          "I must also consider the possibility of a right-sided endocarditis, as this patient's murmur and symptoms are more suggestive of right-sided valve involvement.",
+          "The combination of the patient's symptoms, physical examination findings, and risk factor profile make infective endocarditis the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's symptoms of fever, night sweats, and fatigue are similar to those experienced by individuals with chronic infections, such as tuberculosis, which suggests a prolonged and severe infectious process is at play",
+          "The development of painful red lesions on the fingers and toes, known as Janeway lesions, is analogous to the skin manifestations seen in other embolic phenomena, such as livedo reticularis in vasculitis, indicating possible embolic events",
+          "The presence of a new murmur is reminiscent of valve problems seen in rheumatic heart disease, where valve damage leads to abnormal heart sounds",
+          "The combination of fever, embolic phenomena, and valve issues is similar to the clinical picture of infective endocarditis, where bacteria colonize heart valves and lead to systemic complications",
+          "Just as a faulty filter can allow debris to spread throughout a system, a damaged heart valve can allow bacteria to seed elsewhere in the body, leading to the patient's various symptoms",
+          "The splinter hemorrhages noted on examination are akin to the petechiae seen in other microvascular occlusive disorders, such as thrombotic thrombocytopenic purpura, further supporting the diagnosis of a condition that leads to small vessel occlusion",
+          "Putting it all together, the patient's clinical presentation is most consistent with infective endocarditis, where the triad of fever, valve dysfunction, and embolic phenomena converge to form a diagnostic picture"
+        ]
+      }
+    ]
+  }
+]
