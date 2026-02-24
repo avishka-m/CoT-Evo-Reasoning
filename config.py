@@ -13,9 +13,9 @@ from kaggle_secrets import UserSecretsClient
 load_dotenv()
 
 # ── DeepSeek API ───────────────────────────────────────────────────────────────
-DEEPSEEK_API_KEY  = user_secrets.get_secret("DEEPSEEK_API_KEY")
-DEEPSEEK_BASE_URL = user_secrets.get_secret("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-DEEPSEEK_MODEL    = user_secrets.get_secret("DEEPSEEK_MODEL", "deepseek-chat")
+DEEPSEEK_API_KEY  = os.getenv("DEEPSEEK_API_KEY", "")
+DEEPSEEK_BASE_URL = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
+DEEPSEEK_MODEL    = os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
 
 # ── Embedding Model ────────────────────────────────────────────────────────────
 # Medical-domain fine-tuned model from HuggingFace — downloaded & cached locally on first run.
