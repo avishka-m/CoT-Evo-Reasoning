@@ -3,7 +3,12 @@ main.py
 -------
 Entry point for the CoT-Evo GA Medical Reasoning System.
 
-Usage:
+Batch Mode (default):
+    Iterates over every JSON file in the `data/` folder.
+    If a matching output file already exists in `output/`, that file is SKIPPED.
+    Results are saved to `output/<same_filename>` for each input.
+
+Single-file override (optional):
     python main.py --data data/medical_qa.json
     python main.py --data data/medical_qa.json --generations 10
     python main.py --data data/sample.json --generations 1 --population 5
@@ -11,7 +16,9 @@ Usage:
 
 import argparse
 import os
-from config import GA_GENERATIONS, GA_POPULATION_SIZE, OUTPUT_DIR
+import glob
+
+from config import GA_GENERATIONS, GA_POPULATION_SIZE, OUTPUT_DIR, DATA_DIR
 import config  # allow overriding via CLI args
 
 from data_loader import load_dataset
@@ -25,8 +32,11 @@ def parse_args():
     parser.add_argument(
         "--data",
         type=str,
-        default=os.path.join("data", "medical_qa.json"),
-        help="Path to the medical QA dataset JSON file",
+        default=None,
+        help=(
+            "Path to a single medical QA JSON file. "
+            "If omitted, ALL files in the data/ folder are processed."
+        ),
     )
     parser.add_argument(
         "--generations",
@@ -43,8 +53,11 @@ def parse_args():
     parser.add_argument(
         "--output",
         type=str,
-        default=os.path.join(OUTPUT_DIR, "evolved_reasoning.json"),
-        help="Output JSON file path",
+        default=None,
+        help=(
+            "Output JSON file path. Only used when --data targets a single file. "
+            "In batch mode the output name mirrors the input filename."
+        ),
     )
     parser.add_argument(
         "--quiet",
@@ -54,61 +67,162 @@ def parse_args():
     return parser.parse_args()
 
 
-def main():
-    args = parse_args()
+def collect_pending_files(data_dir: str, output_dir: str):
+    """
+    Discover all .json files in data_dir.
+    Return a list of (input_path, output_path) tuples for files that do NOT
+    yet have a corresponding output file.
+    """
+    os.makedirs(output_dir, exist_ok=True)
 
-    # Allow CLI to override config constants
-    config.GA_GENERATIONS    = args.generations
-    config.GA_POPULATION_SIZE = args.population
+    all_input_files = sorted(
+        glob.glob(os.path.join(data_dir, "*.json"))
+    )
 
-    print("=" * 60)
-    print("  CoT-Evo: Medical Reasoning GA System")
-    print("=" * 60)
-    print(f"  Dataset     : {args.data}")
-    print(f"  Generations : {args.generations}")
-    print(f"  Population  : {args.population}")
-    print(f"  Output      : {args.output}")
+    if not all_input_files:
+        print(f"[BatchRunner] No JSON files found in '{data_dir}'.")
+        return []
+
+    pending = []
+    for input_path in all_input_files:
+        filename    = os.path.basename(input_path)          # e.g. medical_qa.json
+        output_path = os.path.join(output_dir, filename)   # output/medical_qa.json
+
+        if os.path.exists(output_path):
+            print(f"[BatchRunner] SKIP  '{filename}'  →  output already exists.")
+        else:
+            print(f"[BatchRunner] QUEUE '{filename}'  →  will be processed.")
+            pending.append((input_path, output_path))
+
+    return pending
+
+
+def process_single_file(
+    input_path: str,
+    output_path: str,
+    generations: int,
+    verbose: bool,
+):
+    """Load dataset from input_path, evolve it, save to output_path."""
+    print("\n" + "=" * 60)
+    print(f"  Processing : {os.path.basename(input_path)}")
+    print(f"  Output     : {output_path}")
     print("=" * 60)
 
-    # Load dataset
-    dataset = load_dataset(args.data)
+    dataset = load_dataset(input_path)
     if not dataset:
-        print("[ERROR] No valid records found in dataset. Exiting.")
-        return
+        print(f"[ERROR] No valid records in '{input_path}'. Skipping.")
+        return None
 
-    # Run evolution
     results = run_evolution(
         dataset=dataset,
-        generations=args.generations,
-        output_path=args.output,
-        verbose=not args.quiet,
+        generations=generations,
+        output_path=output_path,
+        verbose=verbose,
     )
 
     # Print best result for each question
     print("\n\n  -- FINAL EVOLVED REASONING --\n")
     for r in results:
-        best = r['best_reasoning']
+        best = r["best_reasoning"]
         print(f"  ID      : {r['id']}")
         print(f"  Question: {r['question'][:100]}...")
         print(f"  Fitness : {best['fitness_score']:.4f}")
         print(f"  Model   : {best['model']}")
-        
-        # Display Clinical and Evidence Scores
-        print(f"  Scores  : Clinical Mean:{best.get('clinical_criteria_mean',0):.2f} | Evidence Score:{best.get('evidence_score',0):.2f}")
+        print(
+            f"  Scores  : Clinical Mean:{best.get('clinical_criteria_mean', 0):.2f} "
+            f"| Evidence Score:{best.get('evidence_score', 0):.2f}"
+        )
         print(f"  Grade   : {best.get('evidence_grade', 'D')}")
-        
         print(f"  Step Breakdown:")
-        for step in best.get('per_step', []):
-            idx = step.get('step_index', '?')
-            scr = step.get('score', 0)
-            lvl = step.get('evidence_level', 'D')
-            
-            # Clinical scores summary
-            clin = step.get('clinical_scores', {})
-            clin_str = f"S:{clin.get('safety_utility',0):.1f} V:{clin.get('clinical_validity',0):.1f} R:{clin.get('clinical_relevance',0):.1f}"
-            
+        for step in best.get("per_step", []):
+            idx  = step.get("step_index", "?")
+            scr  = step.get("score", 0)
+            lvl  = step.get("evidence_level", "D")
+            clin = step.get("clinical_scores", {})
+            clin_str = (
+                f"S:{clin.get('safety_utility', 0):.1f} "
+                f"V:{clin.get('clinical_validity', 0):.1f} "
+                f"R:{clin.get('clinical_relevance', 0):.1f}"
+            )
             print(f"    Step {idx:2} [Lvl {lvl} | Score {scr:.2f}] -> {clin_str}")
         print()
+
+    return results
+
+
+def main():
+    args = parse_args()
+
+    # Allow CLI to override config constants
+    config.GA_GENERATIONS     = args.generations
+    config.GA_POPULATION_SIZE = args.population
+
+    verbose = not args.quiet
+
+    print("=" * 60)
+    print("  CoT-Evo: Medical Reasoning GA System")
+    print("=" * 60)
+    print(f"  Generations : {args.generations}")
+    print(f"  Population  : {args.population}")
+    print("=" * 60)
+
+    # ── Mode: single file explicitly provided ──────────────────────────────────
+    if args.data is not None:
+        output_path = args.output or os.path.join(
+            OUTPUT_DIR, os.path.basename(args.data)
+        )
+        print(f"  Mode        : single file")
+        print(f"  Dataset     : {args.data}")
+        print(f"  Output      : {output_path}\n")
+        process_single_file(
+            input_path=args.data,
+            output_path=output_path,
+            generations=args.generations,
+            verbose=verbose,
+        )
+        return
+
+    # ── Mode: batch — process all files in data/ ───────────────────────────────
+    print(f"  Mode        : batch (all files in '{DATA_DIR}/')")
+    print()
+
+    pending = collect_pending_files(DATA_DIR, OUTPUT_DIR)
+
+    if not pending:
+        print("\n[BatchRunner] Nothing to process. All files already have outputs.")
+        return
+
+    print(f"\n[BatchRunner] {len(pending)} file(s) to process.\n")
+
+    total    = len(pending)
+    success  = 0
+    failed   = 0
+
+    for idx, (input_path, output_path) in enumerate(pending, start=1):
+        filename = os.path.basename(input_path)
+        print(f"\n[BatchRunner] ── File {idx}/{total}: {filename} ──")
+        try:
+            result = process_single_file(
+                input_path=input_path,
+                output_path=output_path,
+                generations=args.generations,
+                verbose=verbose,
+            )
+            if result is not None:
+                success += 1
+            else:
+                failed += 1
+        except Exception as e:
+            print(f"[BatchRunner] ERROR processing '{filename}': {e}")
+            failed += 1
+
+    print("\n" + "=" * 60)
+    print("  BATCH COMPLETE")
+    print(f"  Processed : {success}/{total} succeeded")
+    if failed:
+        print(f"  Failed    : {failed}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
