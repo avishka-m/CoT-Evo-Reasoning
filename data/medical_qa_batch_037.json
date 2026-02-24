@@ -1,0 +1,630 @@
+[
+  {
+    "id": "q361",
+    "question": "A 28-year-old man presents with a 2-day history of fever, headache, and confusion. He had a brief prodrome of malaise and nausea. On examination, he is febrile and has new-onset expressive dysphasia and right-sided facial weakness. His partner mentions he had a cold sore last week.",
+    "answer": "Herpes simplex encephalitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The acute presentation of fever, headache, and confusion in a young adult suggests a central nervous system infection such as encephalitis.",
+          "Focal neurological deficits including expressive dysphasia and right-sided facial weakness indicate localized brain involvement, often seen in herpes simplex encephalitis.",
+          "A history of recent cold sore implicates herpes simplex virus (HSV) as a likely pathogen due to its propensity to cause encephalitis.",
+          "Herpes simplex encephalitis commonly affects the temporal lobes, which can explain the language and facial motor symptoms observed.",
+          "Urgent diagnostic evaluation includes brain MRI to detect temporal lobe abnormalities and lumbar puncture for CSF analysis with HSV PCR.",
+          "Empiric treatment with intravenous acyclovir should be initiated immediately upon suspicion to reduce mortality and improve outcomes.",
+          "Confirmation of diagnosis is based on positive HSV PCR in CSF, guiding continuation of acyclovir therapy for 14-21 days."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of expressive dysphasia and right-sided facial weakness suggests a focal lesion in the left hemisphere of the brain, which could be due to a variety of causes including infection or inflammation.",
+          "The patient's symptoms of fever, headache, and confusion, combined with the focal neurological deficits, point towards an infectious or inflammatory cause of encephalitis.",
+          "The recent history of a cold sore (herpes labialis) is a clue, as herpes simplex virus (HSV) is a common cause of encephalitis and can reactivate from latent infection in the trigeminal ganglion.",
+          "Herpes simplex encephalitis (HSE) typically presents with a brief prodrome of nonspecific symptoms such as malaise and nausea, followed by rapid progression to severe encephalitis with fever, headache, and altered mental status.",
+          "The presence of focal neurological signs such as expressive dysphasia and facial weakness, along with the history of recent herpetic lesion, makes HSE a highly likely diagnosis.",
+          "The patient's acute presentation with fever, headache, confusion, and focal neurological deficits, in combination with the recent history of cold sore, makes Herpes simplex encephalitis the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with acute febrile illness, headache, and confusion, indicating a likely central nervous system infection such as meningitis or encephalitis.",
+          "The presence of focal neurological signs (expressive dysphasia and right-sided facial weakness) strongly suggests a focal encephalitic process rather than a diffuse meningitic illness.",
+          "The history of a recent cold sore (oral herpes) is a critical clue, as herpes simplex virus type 1 is a common cause of sporadic, severe focal encephalitis in adults.",
+          "Other potential causes like bacterial meningitis, enteroviral meningitis, or autoimmune encephalitis are considered, but the focal deficits and cold sore history make HSV encephalitis the leading diagnosis.",
+          "Brain imaging (MRI) and cerebrospinal fluid analysis (PCR for HSV) would be the definitive diagnostic steps, but the clinical picture is highly characteristic.",
+          "Empiric intravenous acyclovir must be started immediately upon suspicion, as delay in treatment significantly worsens mortality and morbidity in HSV encephalitis.",
+          "The combination of acute encephalopathy, focal neurological signs, and a history of oral herpes leads to the definitive clinical diagnosis of herpes simplex encephalitis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Upon initial assessment, the patient's symptoms suggest a possible viral encephalitis, but the presence of new-onset expressive dysphasia and right-sided facial weakness prompts consideration of a more specific diagnosis.",
+          "However, the patient's age, presentation with a prodrome of malaise and nausea, and the presence of fever and confusion are consistent with viral encephalitis, and the facial weakness could be due to a brainstem lesion.",
+          "The patient's history of a cold sore last week, which is caused by Herpes simplex virus, is a crucial clue that shifts the differential diagnosis towards Herpes simplex encephalitis.",
+          "Herpes simplex encephalitis typically presents with a rapid progression of symptoms, including new-onset focal neurologic deficits, which is consistent with the patient's presentation.",
+          "The patient's symptoms and history are highly suggestive of Herpes simplex encephalitis, particularly given the temporal relationship between the cold sore and the onset of symptoms.",
+          "Expressive dysphasia, which is a feature of language processing, is a common presentation in Herpes simplex encephalitis, making this diagnosis increasingly likely.",
+          "The combination of the patient's symptoms, history, and the specific characteristics of Herpes simplex encephalitis solidify this diagnosis as the most likely explanation."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's fever, headache, and confusion resemble a storm in the brain, with HSV acting as the lightning that ignites inflammation in the temporal lobe.",
+          "His recent cold sore is like a hidden bomb—HSV-1 virus lies dormant in the trigeminal nerve and later travels to the brain, causing encephalitis.",
+          "Expressive dysphasia and facial weakness mirror a short circuit in electrical wiring, where inflammation disrupts specific neural pathways in the frontal and temporal lobes.",
+          "The prodrome of malaise and nausea is akin to a prelude to the main act, signaling HSV’s initial replication before full-blown CNS invasion.",
+          "Facial weakness on one side is like a garden hose kinked by inflammation, blocking normal motor signals from the brainstem to the facial muscles."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q362",
+    "question": "A 45-year-old woman with known atopic eczema is brought in with a widespread, painful vesicular rash over her face and neck that has developed over 24 hours. The lesions are monomorphic and umbilicated. She has a fever and looks unwell.",
+    "answer": "Eczema herpeticum",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's history of atopic eczema indicates a compromised skin barrier, predisposing her to infections.",
+          "The acute onset of a widespread, painful vesicular rash over the face and neck suggests an infectious process, likely viral.",
+          "The monomorphic and umbilicated appearance of the vesicles is characteristic of herpes simplex virus (HSV) infection.",
+          "Systemic symptoms such as fever and appearing unwell point to a disseminated infection rather than a localized one.",
+          "In the context of atopic eczema, disseminated HSV infection is diagnosed as eczema herpeticum, a serious complication.",
+          "Immediate management involves initiating intravenous antiviral therapy, such as acyclovir, to control the infection.",
+          "Supportive care includes analgesia, hydration, and monitoring for complications like secondary bacterial infection or keratitis."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a widespread, painful vesicular rash with monomorphic and umbilicated lesions suggests a viral etiology, particularly given the patient's background of atopic eczema.",
+          "The patient's symptoms of fever and general malaise also support a diagnosis of a severe viral infection.",
+          "The specific characteristics of the rash, including its vesicular nature and umbilication, are highly suggestive of a herpesvirus infection.",
+          "In a patient with atopic eczema, the development of a widespread viral rash is most consistent with eczema herpeticum, which is a complication of atopic dermatitis caused by herpes simplex virus.",
+          "The patient's presentation with a rapid onset of symptoms over 24 hours and the specific appearance of the lesions further supports this diagnosis.",
+          "The combination of the patient's underlying condition, the characteristics of the rash, and the systemic symptoms of fever and malaise all point towards a diagnosis of eczema herpeticum."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's known atopic eczema and the acute onset of a widespread, painful vesicular rash suggest a secondary infection complicating the eczema.",
+          "The monomorphic and umbilicated appearance of the vesicles is highly characteristic of a herpes simplex virus (HSV) infection, rather than a bacterial superinfection which would typically present with pustules, crusting, or weeping.",
+          "The presence of systemic symptoms like fever and appearing unwell indicates a disseminated infection, which in the context of atopic eczema is most consistent with eczema herpeticum (Kaposi varicelliform eruption).",
+          "While other viral exanthems or disseminated varicella-zoster virus (VZV) are possible, the monomorphic (same stage) umbilicated vesicles localized to the face and neck, areas commonly affected by eczema, strongly favor HSV.",
+          "Eczema herpeticum is a dermatological emergency due to risk of viral dissemination and secondary bacterial infection, necessitating prompt systemic antiviral therapy (e.g., acyclovir).",
+          "The clinical picture does not primarily suggest an acute flare of atopic eczema alone, as the lesion morphology and systemic signs point to an infectious process.",
+          "Therefore, the most likely diagnosis is eczema herpeticum, requiring immediate evaluation and initiation of antiviral treatment."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Initially, I considered this patient's presentation to be consistent with a severe flare of her underlying atopic eczema, but the presence of fever and a relatively sudden onset raised concerns for a secondary infection.",
+          "However, the vesicular nature of the rash and the fact that the lesions are monomorphic and umbilicated suggest a viral etiology, which led me to consider a diagnosis of herpes simplex virus (HSV) infection.",
+          "Eczema herpeticum, a complication of HSV infection in individuals with atopic eczema, fits with the patient's presentation, and the fact that she looks unwell supports this diagnosis.",
+          "The widespread nature of the rash, in combination with the patient's fever, suggests a disseminated infection, which is consistent with eczema herpeticum.",
+          "The presence of umbilicated lesions is a key feature of eczema herpeticum, which is often not seen in typical HSV infections, further supporting this diagnosis.",
+          "Given the patient's clinical presentation and the fact that eczema herpeticum is a known complication of atopic eczema, I am confident in my diagnosis of eczema herpeticum."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: The patient's history of atopic eczema combined with a rapid, painful vesicular rash suggests a viral superinfection, akin to a wildfire spreading through dry brush (eczema-prone skin).",
+          "Step 2: Monomorphic, umbilicated lesions are classic for eczema herpeticum, resembling tiny volcanic craters erupting across the skin due to herpes simplex virus (HSV) invasion.",
+          "Step 3: The facial/neck distribution mirrors HSV's predilection for mucocutaneous junctions, similar to how a river (HSV) follows a valley (eczema fissures).",
+          "Step 4: Systemic symptoms (fever, malaise) indicate a severe infection, analogous to a smallpox-like systemic viral response but with eczema as the critical vulnerability factor.",
+          "Step 5: Differentiation from impetigo or pemphigus vulgaris relies on lesion morphology (umbilicated vs. crusted or flaccid) and rapid progression, much like distinguishing a lightning strike (eczema herpeticum) from slower-growing trees (other conditions)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q363",
+    "question": "A 60-year-old man, 3 months post-renal transplant on immunosuppressive therapy, presents with dysphagia and odynophagia. On examination, he has fever and multiple shallow, tender ulcers on his hard palate and pharynx.",
+    "answer": "Herpes simplex gingivostomatitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient is immunocompromised due to recent renal transplant and ongoing immunosuppressive therapy, predisposing him to opportunistic infections.",
+          "He presents with dysphagia and odynophagia, suggesting involvement of the oropharynx, accompanied by fever indicating a systemic inflammatory response.",
+          "Examination reveals multiple shallow, tender ulcers on the hard palate and pharynx, which are typical mucosal lesions seen in viral stomatitis.",
+          "In immunocompromised patients, herpes simplex virus (HSV) reactivation is a common cause of painful oral ulcerations, whereas candidiasis often presents with plaques and not typically shallow ulcers.",
+          "The clinical presentation of fever and tender shallow ulcers aligns more with herpes simplex gingivostomatitis rather than cytomegalovirus or aphthous stomatitis.",
+          "Confirmatory diagnosis can be made with viral culture or PCR from ulcer swabs, and treatment involves initiating antiviral therapy such as acyclovir."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's immunosuppressed state due to post-transplant therapy makes him susceptible to opportunistic infections.",
+          "The presence of multiple shallow, tender ulcers on the hard palate and pharynx, along with fever, suggests a viral etiology.",
+          "The specific location of the ulcers and the symptoms of dysphagia and odynophagia point towards an oral and pharyngeal infection.",
+          "The patient's clinical presentation is consistent with a reactivation of a latent viral infection, which is common in immunocompromised individuals.",
+          "The most likely viral cause of this presentation, given the patient's symptoms and immune status, is Herpes simplex virus.",
+          "Herpes simplex gingivostomatitis is a known complication in immunocompromised patients, which matches the patient's clinical presentation."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is immunocompromised post-transplant, presenting with painful oral ulcers and dysphagia, suggesting an opportunistic infection.",
+          "Common opportunistic pathogens in this setting include Candida, herpesviruses (HSV, CMV), and other fungi or viruses.",
+          "Candida typically causes thrush (white plaques) rather than shallow ulcers, making it less likely as the primary cause here.",
+          "The description of multiple shallow, tender ulcers on the hard palate and pharynx is classic for herpes simplex virus (HSV) stomatitis, especially in immunosuppression.",
+          "CMV can cause ulcers but they are often larger and deeper, and CMV more commonly causes systemic disease; the presentation here is more focal and characteristic of HSV.",
+          "Given the acuity, location, and patient's immunosuppressed state, herpes simplex gingivostomatitis is the most probable diagnosis.",
+          "Confirmatory testing like viral PCR or culture can be done, but empiric treatment with acyclovir is appropriate while awaiting results."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's symptoms of dysphagia and odynophagia, along with fever and oral ulcers, suggest an infectious etiology.",
+          "Given the patient's immunocompromised state post-renal transplant, I initially considered a fungal infection such as oral candidiasis, but there is no mention of a white oral coating or lesions.",
+          "However, the presence of shallow, tender ulcers on the hard palate and pharynx points more towards a viral etiology.",
+          "Herpes simplex virus (HSV) is a common cause of oral ulcers in immunocompromised patients, and its typical presentation of painful ulcers in the oral cavity, especially on the hard palate, is consistent with this patient's symptoms.",
+          "Additionally, HSV gingivostomatitis is a known complication in immunocompromised patients, making this diagnosis the most likely explanation for the patient's symptoms.",
+          "Therefore, a diagnosis of Herpes simplex gingivostomatitis is confirmed based on the patient's clinical presentation and immunocompromised state."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's immunosuppressed state due to renal transplantation creates a 'broken immune firewall,' making them vulnerable to opportunistic infections like herpes simplex virus (HSV).",
+          "HSV typically manifests as painful ulcers in immunocompetent individuals (e.g., cold sores), but in this case, the widespread shallow ulcers in the mouth mirror a 'wildfire' of viral replication due to weakened immune surveillance.",
+          "The combination of fever, dysphagia, and oral ulcers resembles a 'textbook' presentation of herpes simplex gingivostomatitis, akin to severe hand-foot-mouth disease but localized to the oral cavity.",
+          "In contrast to Candida (which causes white patches) or CMV (which might involve gastrointestinal tract), HSV's 'signature' is tender, fluid-filled lesions progressing to ulcers within days, fitting the 3-month post-transplant timeline when acute infection peaks.",
+          "The diagnosis is analogous to a 'viral storm' exploiting immune suppression, requiring antiviral therapy (e.g., acyclovir) as the 'fire extinguisher' to halt HSV replication and prevent systemic spread."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q364",
+    "question": "A 32-year-old woman presents with a 5-day history of painful genital ulcers and tender inguinal lymphadenopathy. She reports a preceding tingling sensation in the area. This is her first such episode and she is systemically well.",
+    "answer": "Primary genital herpes",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient presents with painful genital ulcers and tender inguinal lymphadenopathy, prompting consideration of infectious causes such as herpes simplex virus (HSV), syphilis, or chancroid.",
+          "The preceding tingling sensation is a characteristic prodromal symptom of HSV infections, often indicating viral reactivation or primary infection.",
+          "The first episode, absence of systemic symptoms, and painful nature of the ulcers help differentiate from syphilis (typically painless) and chancroid (often more severe).",
+          "Tender inguinal lymphadenopathy aligns with an acute local immune response, commonly observed in primary genital herpes infections.",
+          "Given the classic triad of painful ulcers, prodromal tingling, and tender lymphadenopathy in a young adult, primary genital herpes is the leading clinical diagnosis.",
+          "Diagnostic confirmation, if needed, involves HSV PCR or viral culture from ulcer swabs to guide management and patient counseling.",
+          "Initial management includes antiviral therapy (e.g., valacyclovir or acyclovir) to reduce symptom duration and severity, along with education on transmission risks and recurrence patterns."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of painful genital ulcers and tender inguinal lymphadenopathy suggests an infectious etiology, likely a sexually transmitted infection.",
+          "The patient's report of a preceding tingling sensation in the area is a characteristic prodrome often associated with herpes simplex virus (HSV) infections.",
+          "The fact that this is her first episode of genital ulcers and she is systemically well makes a primary infection more likely than a reactivation of a latent infection.",
+          "The clinical presentation of painful genital ulcers, tender inguinal lymphadenopathy, and a prodromal tingling sensation is highly suggestive of primary genital herpes.",
+          "The patient's age and the acute presentation of symptoms also support the diagnosis of a primary HSV infection, which is more common in younger adults.",
+          "The combination of these clinical features and the absence of systemic symptoms or other significant findings leads to the conclusion that the patient has primary genital herpes."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation of painful genital ulcers with tender inguinal lymphadenopathy and a preceding prodrome of tingling suggests an infectious, likely viral, etiology.",
+          "Key differentials for acute genital ulcers include primary syphilis (typically a single, painless chancre), chancroid (painful ulcer but usually without prodrome and caused by Haemophilus ducreyi), and primary genital herpes simplex virus (HSV) infection.",
+          "The presence of a prodromal sensory symptom (tingling) is highly characteristic of a herpesvirus infection, as it indicates neural involvement prior to vesicle or ulcer formation.",
+          "Primary genital herpes often presents with multiple, painful ulcers, tender lymphadenopathy, and can be associated with systemic symptoms, though their absence here does not rule it out.",
+          "Syphilis is less likely given the painfulness of the ulcers and the prodrome; chancroid is uncommon in many settings and lacks the characteristic neural prodrome.",
+          "The combination of painful ulcers, tender lymphadenopathy, and a preceding tingling sensation in a young, otherwise healthy patient makes primary genital herpes the most likely diagnosis.",
+          "Confirmatory testing with PCR from ulcer swab for HSV DNA is the diagnostic standard, but the clinical presentation is highly suggestive for primary genital herpes."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial presentation of painful genital ulcers and tender inguinal lymphadenopathy suggests a sexually transmitted infection (STI) such as chancroid or primary syphilis.",
+          "However, the presence of a preceding tingling sensation, which is often described as 'burning' or 'itching,' is more commonly associated with herpes simplex virus (HSV) infection.",
+          "The patient's age and the first-time presentation of symptoms further support the diagnosis of primary genital herpes, as HSV-2 is primarily transmitted through sexual contact and tends to cause more severe initial outbreaks.",
+          "The patient's systemic well-being also helps to rule out more severe STIs such as HIV or Ebola, which often present with systemic symptoms like fever or weight loss.",
+          "Given the classic symptoms and presentation, a tentative diagnosis of primary genital herpes is made, and laboratory confirmation would involve a viral culture or PCR from the lesion."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient’s painful genital ulcers and preceding tingling align with the 'iceberg analogy' of HSV infection, where the prodromal tingling is like the tip of the iceberg signaling an outbreak below the surface. Primary genital herpes often begins with a burning or tingling sensation before visible lesions form. Tender inguinal lymphadenopathy is a hallmark of HSV, akin to a 'guardian response' where the immune system reacts to the viral invasion. The absence of systemic symptoms (e.g., fever, fatigue) contrasts with secondary syphilis or bacterial infections, narrowing the focus to localized viral etiologies. Painful ulcers distinguish this from the 'silent' painless chancre of syphilis, further supporting the diagnosis of herpes. The 'first-time flare' pattern is typical of HSV-2 in a seronegative individual, similar to a first-time allergic reaction to a previously innocuous substance. Confirmatory testing (e.g., PCR or Tzanck smear) would be the next step, much like a 'DNA fingerprint' to identify the culprit virus."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q365",
+    "question": "A 25-year-old healthcare worker has developed intensely painful vesicles and swelling on the distal pad of her index finger over the past 48 hours. She reports no systemic symptoms.",
+    "answer": "Herpetic whitlow",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The acute onset of intensely painful vesicles and swelling on the distal finger pad in a young healthcare worker points towards a localized infectious process.",
+          "The absence of systemic symptoms narrows the differential to conditions primarily affecting the skin and soft tissue of the finger.",
+          "The presence of vesicles is a key feature, suggesting a viral etiology such as herpes simplex virus over bacterial infections like a felon or paronychia.",
+          "Herpetic whitlow is a known occupational infection among healthcare workers due to exposure to HSV from oral or respiratory secretions.",
+          "The classic presentation of painful vesicles on the distal pad, without purulence, strongly supports the diagnosis of herpetic whitlow.",
+          "Confirmation can be achieved through viral culture or PCR of vesicular fluid, though diagnosis is often clinical based on the distinctive appearance and history.",
+          "Management includes oral antiviral agents like acyclovir, pain control, and patient education to avoid incision or drainage which could worsen the infection."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of intensely painful vesicles and swelling on the distal pad of the finger suggests a condition that affects the skin and subcutaneous tissue.",
+          "The healthcare worker's profession and the localized nature of the symptoms point towards an infection that can be acquired through direct contact with infected bodily fluids.",
+          "The absence of systemic symptoms helps to narrow down the differential diagnosis to a localized infection rather than a systemic disease.",
+          "The specific location on the distal pad of the finger and the description of the lesions are classic for a viral infection.",
+          "The combination of the patient's symptoms, the localized nature of the infection, and the absence of systemic symptoms leads to the diagnosis of herpetic whitlow, a viral infection caused by herpes simplex virus.",
+          "The fact that herpetic whitlow commonly affects healthcare workers who come into contact with infected bodily fluids supports this diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with acute onset of painful vesicles and swelling on a distal fingertip, which is a classic location for herpetic whitlow, a herpes simplex virus infection of the finger.",
+          "Alternative diagnoses to consider include bacterial paronychia or felon, but these typically present with more purulent drainage and less prominent vesicle formation.",
+          "The patient's occupation as a healthcare worker increases the risk of herpetic whitlow due to potential exposure to oral or respiratory secretions, often through non-intact skin.",
+          "The absence of systemic symptoms, such as fever or lymphadenopathy, further supports a localized infection like herpetic whitlow rather than a more extensive bacterial process.",
+          "The intensely painful nature of the vesicles is characteristic of HSV infection, as the virus affects nerve endings, distinguishing it from other superficial infections.",
+          "Management should include confirming the diagnosis clinically, avoiding incision and drainage to prevent viral dissemination, and considering antiviral therapy like acyclovir.",
+          "Therefore, the most likely diagnosis is herpetic whitlow, aligning with the clinical presentation, occupational risk, and characteristic findings."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's painful vesicles on the distal finger pad initially suggest a possible traumatic injury or an inflammatory condition such as paronychia.",
+          "However, the localized nature of the lesions and the absence of systemic symptoms raise the possibility of a viral etiology, with Herpes Simplex Virus (HSV) being a prime suspect.",
+          "The patient's profession as a healthcare worker increases the likelihood of exposure to HSV, which could lead to a herpetic whitlow, a condition characterized by painful vesicles on the fingertips.",
+          "The fact that the lesions are intensely painful further supports the diagnosis of herpetic whitlow, as this is a hallmark symptom of the condition.",
+          "A review of the patient's medical history reveals no previous episodes of similar skin lesions, which decreases the likelihood of other conditions such as recurrent herpes simplex or other viral infections.",
+          "Considering the patient's exposure to potential sources of HSV, her lack of systemic symptoms, and the characteristic painful nature of the lesions, the diagnosis of herpetic whitlow appears increasingly likely."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "cluster of tiny blisters",
+          "1. A healthcare worker's hands are like a frontline battlefield, constantly exposed to pathogens; herpetic whitlow, caused by HSV, is a common occupational hazard due to direct contact with infected bodily fluids or patients.",
+          "2. The distal fingertip's anatomy is akin to a pressure-sensitive switch—vesicles here signal a viral ",
+          " (HSV) that hijacks nerve endings, causing intense localized pain without systemic spread.",
+          "3. Herpetic vesicles resemble a ",
+          " under the skin, distinct from bacterial pustules (like ",
+          ") which lack the characteristic serous fluid and linear arrangement.",
+          "4. The absence of systemic symptoms is analogous to a localized fire alarm—while the infection rages locally (a ",
+          " of inflammation), the body's immune system hasn't triggered a full-blown ",
+          "5. Diagnosis mirrors solving a viral ",
+          ": Tzanck smear identifies viral ",
+          " (multinucleated giant cells), while PCR acts as a molecular ",
+          "6. Treatment with acyclovir is like deploying antiviral ",
+          " to prevent the infection from escalating into a full-blown outbreak.",
+          "7. Prophylaxis with gloves and hand hygiene acts as a ",
+          " protecting healthcare workers from HSV, much like a knight's armor defends against pathogens."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q366",
+    "question": "A 24-year-old university student presents with a 4-day history of worsening sore throat, fever, and profound fatigue. He reports tender lumps in his neck, poor appetite, and a general feeling of being unwell. On examination, he has bilateral tonsillar exudate, palatal petechiae, and palpable posterior cervical lymphadenopathy.",
+    "answer": "Infectious mononucleosis (Epstein-Barr virus infection)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient is a young adult with acute symptoms of sore throat, fever, and profound fatigue, suggesting an infectious etiology such as viral or bacterial pharyngitis.",
+          "Bilateral tonsillar exudate and palatal petechiae on examination are classic findings that narrow the differential to streptococcal pharyngitis or infectious mononucleosis.",
+          "The presence of tender posterior cervical lymphadenopathy, along with systemic symptoms like poor appetite and malaise, is highly suggestive of infectious mononucleosis rather than typical strep throat.",
+          "Infectious mononucleosis caused by Epstein-Barr virus commonly affects adolescents and young adults, presenting with the triad of fever, pharyngitis, and lymphadenopathy.",
+          "Confirmation typically involves a heterophile antibody test (Monospot) or EBV-specific serology, which would be positive in this clinical context.",
+          "Management focuses on supportive care with rest, hydration, and analgesics, while advising avoidance of contact sports to prevent splenic rupture.",
+          "Therefore, the most likely diagnosis is infectious mononucleosis due to Epstein-Barr virus infection."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of bilateral tonsillar exudate, palatal petechiae, and palpable posterior cervical lymphadenopathy suggests a diagnosis of infectious mononucleosis over other causes of sore throat like streptococcal pharyngitis.",
+          "The combination of tender lumps in the neck (lymphadenopathy), fever, and sore throat in a young adult points towards a lymphatic or viral infection.",
+          "The patient's symptoms of profound fatigue, poor appetite, and general feeling of being unwell suggest a systemic illness rather than a localized infection.",
+          "The age of the patient (24 years) and the specific constellation of symptoms such as sore throat, fever, fatigue, and lymphadenopathy are consistent with infectious mononucleosis.",
+          "Infectious mononucleosis caused by Epstein-Barr virus (EBV) is a common cause of prolonged sore throat, fever, and lymphadenopathy in young adults.",
+          "The clinical presentation of this patient aligns well with the classic triad of symptoms for infectious mononucleosis: fever, sore throat, and lymphadenopathy."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with sore throat, fever, fatigue, tonsillar exudate, and lymphadenopathy suggests a common infectious pharyngitis, such as streptococcal pharyngitis.",
+          "However, the presence of profound fatigue, posterior cervical lymphadenopathy (more typical of viral infection), and palatal petechiae expands the differential to include viral causes like infectious mononucleosis (IM) and cytomegalovirus (CMV).",
+          "The patient's age (young adult) and the combination of symptoms (profound fatigue, poor appetite, tender lymph nodes) make IM a leading consideration, as streptococcal pharyngitis typically lacks such pronounced systemic symptoms.",
+          "To differentiate, one would consider testing: a rapid strep test or throat culture for Group A Streptococcus, and a heterophile antibody test (Monospot) or EBV-specific serology for IM.",
+          "A negative rapid strep test and a positive heterophile test in this clinical setting would strongly confirm infectious mononucleosis due to Epstein-Barr virus.",
+          "Alternative viral causes like acute CMV or HIV infection could present similarly but are less common in this specific acute pharyngitis context; CMV mononucleosis usually lacks exudative tonsillitis and palatal petechiae.",
+          "Therefore, synthesizing the clinical features (young adult, exudative tonsillitis, posterior cervical lymphadenopathy, palatal petechiae, profound fatigue) points to infectious mononucleosis as the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of sore throat, fever, fatigue, and lymphadenopathy is suggestive of a viral pharyngitis, likely caused by a common upper respiratory tract pathogen such as adenovirus or rhinovirus.",
+          "However, the presence of bilateral tonsillar exudate and palatal petechiae suggests a more severe and potentially infectious process, which may not be typical of a common viral upper respiratory tract infection.",
+          "The patient's age, which is 24 years old, and the presence of lymphadenopathy, particularly palpable posterior cervical lymphadenopathy, raises the possibility of a more serious and less common infectious disease.",
+          "The constellation of symptoms, including sore throat, fever, fatigue, lymphadenopathy, and the presence of tonsillar exudate and palatal petechiae, is highly suggestive of infectious mononucleosis, a condition caused by the Epstein-Barr virus.",
+          "The absence of a clear trigger or exposure to a typical upper respiratory tract pathogen further supports the diagnosis of infectious mononucleosis, as it is often characterized by a prodromal phase of nonspecific symptoms followed by the development of more specific symptoms.",
+          "The patient's overall clinical picture, including the presence of lymphadenopathy, fever, and specific physical examination findings such as tonsillar exudate and palatal petechiae, is highly consistent with the diagnosis of infectious mononucleosis, making this the most likely diagnosis.",
+          "Given the patient's presentation and the absence of any contraindications or alternative diagnoses that would alter the clinical management, a diagnosis of infectious mononucleosis is confirmed."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's symptoms resemble a storm brewing in the throat and neck, with fever and fatigue as the thunder and wind of an immune response.",
+          "Tonsillar exudate and palatal petechiae are like cracks in a dam, signaling pressure from invading Epstein-Barr virus (EBV) particles breaching the tonsillar fortress.",
+          "Posterior cervical lymphadenopathy represents the body's alarm system (lymph nodes) sounding the alert, similar to a town's emergency sirens mobilizing against an intruder.",
+          "The profound fatigue mirrors a marathon runner's energy depletion, as the immune system battles the virus over days.",
+          "This clinical picture is the textbook definition of mononucleosis: a 'kissing disease' caused by EBV, where the body's defenses wage war against the virus, leaving lumps, lesions, and lingering exhaustion in its wake."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q367",
+    "question": "A 6-year-old boy is brought in with a 2-day history of a widespread, itchy rash. His mother reports he had a mild fever and felt off-colour for a day before the spots appeared. On examination, he has multiple erythematous macules, vesicles, and crusted lesions in various stages of development scattered over his trunk, face, and limbs.",
+    "answer": "Chicken pox (primary varicella zoster virus infection)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient is a young child presenting with a febrile prodrome followed by a widespread itchy rash, which is characteristic of many viral exanthems.",
+          "The rash consists of erythematous macules, vesicles, and crusted lesions all present at the same time, which is a classic feature of varicella (chickenpox).",
+          "The distribution of the rash across the trunk, face, and limbs follows the typical pattern of centrifugal spread seen in varicella.",
+          "The combination of prodromal symptoms, itchy rash, and lesions in various stages strongly points to primary infection with varicella-zoster virus.",
+          "Management focuses on symptomatic relief: using acetaminophen for fever (avoiding aspirin due to Reye's syndrome risk), calamine or antihistamines for itching, and ensuring adequate hydration.",
+          "Infection control measures are essential, including isolation from susceptible individuals until all lesions are crusted to prevent transmission."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of multiple erythematous macules, vesicles, and crusted lesions in various stages of development suggests a condition with a polymorphic rash.",
+          "The scattered distribution of the rash over the trunk, face, and limbs, along with the itchy nature, points towards a viral aetiology with a dermatomal distribution.",
+          "The history of a mild fever and feeling off-colour before the onset of the rash indicates a prodromal phase, which is typical of viral infections.",
+          "The child's age and the description of the rash are less typical for conditions like eczema herpeticum or impetigo, making a primary viral infection more likely.",
+          "The characteristic feature of lesions in different stages of development (macules, vesicles, and crusted lesions) is particularly indicative of chicken pox.",
+          "The overall clinical picture, including the itchy rash, fever, and the specific characteristics of the lesions, most strongly supports a diagnosis of chicken pox, caused by primary varicella zoster virus infection."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The presentation of a widespread, itchy rash with lesions in multiple stages (macules, vesicles, crusts) following a prodrome of fever and malaise is classic for a viral exanthem with a centripetal distribution.",
+          "Key differentials include chickenpox (varicella), disseminated herpes zoster, disseminated HSV, enterovirus infections, and insect bites, but the hallmark of simultaneous presence of lesions in all stages strongly points to varicella.",
+          "Disseminated zoster is unlikely without a prior history of chickenpox or a dermatomal precursor; disseminated HSV typically presents with grouped vesicles rather than widespread random distribution.",
+          "Enteroviral infections like hand, foot, and mouth disease have a characteristic distribution and lesion type not matching this description, and insect bites do not typically present with systemic prodromal symptoms.",
+          "The combination of prodromal symptoms, rapid evolution through macular, vesicular, and crusting stages, and widespread involvement including the face confirms the diagnosis of primary varicella infection (chickenpox).",
+          "Management is supportive with antipyretics (avoiding aspirin due to Reye's syndrome risk), antipruritics, and isolation to prevent spread, as antiviral therapy is typically reserved for high-risk patients.",
+          "Therefore, the correct diagnosis is chickenpox caused by primary varicella-zoster virus infection."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial presentation of widespread, itchy rash with fever and feeling unwell suggests a viral exanthem, and I will consider common childhood viral rashes such as roseola or measles.,",
+          "The presence of multiple stages of rash lesions, including erythematous macules, vesicles, and crusted lesions, is more typical of a highly contagious and usually self-limiting viral infection, pointing towards chicken pox or hand-foot-and-mouth disease.,",
+          "However, hand-foot-and-mouth disease typically spares the trunk and face of the rash, and the description of widespread involvement makes chicken pox more likely, especially considering the age of the patient.,",
+          "The fact that the mother reports the rash appeared after a mild fever and feeling unwell is consistent with the prodromal phase of varicella, the rash often following a day or two after onset of symptoms.,",
+          "The characteristic 'dewdrop on a rose petal' appearance of vesicles in chicken pox, although not explicitly mentioned, supports the diagnosis, which is further supported by the highly contagious nature of the illness.,",
+          "Considering the age of the patient and the widespread nature of the rash, along with the clinical features described, the most likely diagnosis is indeed chicken pox, or primary varicella zoster virus infection.,",
+          "The lack of other specific clues for other differential diagnoses and the overall clinical picture makes chicken pox a strong, likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A widespread itchy rash with lesions in various stages (macules, vesicles, crusts) resembles a 'rash army' where different soldiers (lesions) appear at staggered times, typical of varicella's 2–3-day lesion progression cycle.  \nThe fever preceding the rash mirrors the 'warning flare' of a viral infection, akin to a storm warning before a viral storm hits.  \nThe child's age (6 years) aligns with the 'typical battlefield' of chickenpox, which often strikes unvaccinated school-aged children like a surprise classroom outbreak.  \nCrusted lesions suggest 'victory signs' of healing, as varicella lesions typically crust over within 4–5 days—a timeline matching the 2-day history.  \nThe trunk-heavy distribution with face/limb involvement mirrors the 'mosaic pattern' of varicella, where the virus 'paints' the skin in a centrifugal (center-outward) brushstroke.  \nThe absence of localized pain or systemic toxicity distinguishes it from 'fire alarm' conditions like bacterial infections, which are more aggressive and localized.  \nThis constellation of symptoms fits the 'blueprint' of primary varicella, much like a master key unlocking a common pediatric viral puzzle."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q368",
+    "question": "A 72-year-old man with a history of COPD presents with a 3-day history of severe, burning pain and tingling over the left side of his chest. Today, a rash has appeared in the same area. On examination, there is a band of grouped vesicles on an erythematous base extending from his mid-back to the left side of his sternum, following a dermatomal distribution.",
+    "answer": "Shingles (herpes zoster)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "Step 1: The patient's advanced age and history of COPD increase his risk for viral reactivation, such as herpes zoster, due to age-related immunosenescence.",
+          "Step 2: The severe burning pain and tingling localized to the left chest suggest neuropathic pain, which is a common prodrome of shingles.",
+          "Step 3: The appearance of a rash in the exact area of prior pain after 3 days indicates a temporal sequence typical of herpes zoster eruption.",
+          "Step 4: Physical examination reveals grouped vesicles on an erythematous base in a band along a dermatome, confirming a dermatomal distribution.",
+          "Step 5: The combination of prodromal neuropathic pain and a dermatomal vesicular rash is pathognomonic for shingles (herpes zoster).",
+          "Step 6: Immediate management involves starting antiviral therapy like acyclovir or valacyclovir to shorten the course and reduce complications.",
+          "Step 7: Due to his age, monitoring for postherpetic neuralgia is essential, and analgesics should be provided for pain control."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a band of grouped vesicles on an erythematous base in a dermatomal distribution is a hallmark of herpes zoster infection.",
+          "The patient's symptoms of severe, burning pain and tingling prior to the appearance of the rash are consistent with the prodromal phase of herpes zoster.",
+          "The distribution of the rash from the mid-back to the left side of the sternum corresponds to a specific dermatome, which is typical of herpes zoster.",
+          "The patient's age and the fact that herpes zoster is more common in older adults support the diagnosis.",
+          "The patient's history of COPD does not directly relate to the diagnosis, but it may indicate a potentially immunocompromised state, which could increase the risk of herpes zoster."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with severe, burning pain and tingling preceding a rash, which is classic for a neuropathic prodrome.",
+          "The rash is described as grouped vesicles on an erythematous base, which is characteristic of a vesicular rash.",
+          "The rash follows a dermatomal distribution from the mid-back to the sternum, which is a hallmark of a condition affecting a specific sensory nerve root.",
+          "Given the dermatomal pattern and vesicular nature, the differential includes herpes zoster (shingles) and, less likely, herpes simplex in a dermatomal pattern.",
+          "Herpes zoster is strongly favored because it typically presents unilaterally in a single dermatome, matching the description, and is common in older adults.",
+          "The patient's age and history of COPD (a potential immunocompromising condition) are risk factors for herpes zoster reactivation.",
+          "Therefore, the most likely diagnosis is shingles (herpes zoster), aligning with the classic presentation of prodromal pain followed by a dermatomal vesicular rash."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of severe, burning pain and tingling on the left side of his chest, followed by a rash and grouped vesicles, suggests a diagnosis of shingles (herpes zoster), which is often preceded by a history of varicella-zoster virus infection.",
+          "However, the patient's history of COPD does not directly relate to his current symptoms, which seem more dermatologically focused; further consideration of the rash's dermatomal distribution is warranted.",
+          "The dermatomal distribution of the rash, extending from the mid-back to the left side of the sternum, is consistent with nerve root involvement and a diagnosis of shingles, particularly given the patient's age and the rash's characteristics.",
+          "It is essential to differentiate shingles from other dermatological conditions with similar presentations, such as eczema or psoriasis, but the patient's history of pain and tingling before the rash appearance and the specific dermatomal distribution make shingles a more likely diagnosis.",
+          "To confirm the diagnosis, a Tzanck smear or PCR of the rash could be performed to identify varicella-zoster virus, but based on the clinical presentation, shingles is a strong presumptive diagnosis.",
+          "The patient's symptoms and rash are consistent with herpes zoster ophthalmicus if the rash were extending towards the eye, but the dermatomal distribution described does not indicate this and is more consistent with truncal involvement.",
+          "Based on the combination of symptoms, rash characteristics, and dermatomal distribution, the most likely diagnosis is indeed shingles (herpes zoster), which is a classic presentation in an elderly patient with a history of varicella-zoster virus infection."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: The patient's age (72 years) and COPD history raise suspicion for shingles, as both aging and chronic illness weaken immune defenses like a dented firewall, allowing dormant viruses to reactivate. Step 2: The one-sided chest pain and rash resembling grouped blisters in a belt-like pattern fit the dermatomal distribution of T2-T5 nerves, akin to a zipper line of viral eruption along a single spinal nerve territory. Step 3: Burning pain preceding the rash mirrors chickenpox's ",
+          " phenomenon, where the virus reactivates in sensory ganglia before manifesting skin lesions. Step 4: Differentiation from cardiac issues is critical—unlike heart attack, this rash follows dermatomes, not anatomic coronary territories, and lacks ST changes on EKG. Step 5: Treatment with acyclovir is urgent, like dousing a fire early to prevent postherpetic neuralgia—the lingering pain of shingles is as persistent as embers after a wildfire. Step 6: Pain management parallels COPD exacerbation care, using multimodal analgesia (e.g., gabapentin for neuropathic pain) to avoid respiratory depression. Step 7: The immune system's decline with age is akin to a rusting gate, failing to contain the varicella-zoster virus that once caused chickenpox but now reemerges as shingles."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q369",
+    "question": "A 35-year-old woman who is 6 weeks post-kidney transplant presents with a 5-day history of fever, malaise, and mild derangement of her LFTs. She has no localising symptoms of infection. Routine monitoring bloods show a rising viral load on quantitative nucleic acid testing.",
+    "answer": "Cytomegalovirus (CMV) reactivation",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient is immunocompromised due to recent kidney transplantation, predisposing her to opportunistic infections.",
+          "The presentation with fever, malaise, and mild liver function test derangement, without localizing symptoms, suggests a systemic infection rather than a focal one.",
+          "The timeline of 6 weeks post-transplant aligns with the typical period for cytomegalovirus reactivation, which is common in the first few months after solid organ transplant.",
+          "Quantitative nucleic acid testing reveals a rising viral load, confirming active viral replication and supporting an infectious etiology.",
+          "In immunocompromised transplant patients, cytomegalovirus is a frequent cause of such nonspecific symptoms and can lead to hepatitis, accounting for the abnormal liver function tests.",
+          "Therefore, the most likely diagnosis is cytomegalovirus reactivation, which comprehensively explains the clinical and laboratory findings.",
+          "Management should involve initiating antiviral therapy, such as ganciclovir, and considering adjustment of immunosuppressive medications to control the infection."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The management goal is to promptly diagnose and treat the cause of the patient's symptoms and abnormal lab results, which could lead to serious complications if left untreated.",
+          "Given the patient's recent history of kidney transplant, it is likely that her immune system is suppressed, making her susceptible to opportunistic infections.",
+          "The patient's presentation with fever, malaise, and mild liver function test (LFT) derangement, in the absence of localising symptoms, suggests a systemic infection.",
+          "The rising viral load on quantitative nucleic acid testing indicates a viral aetiology for her symptoms.",
+          "Cytomegalovirus (CMV) reactivation is a well-known complication in immunocompromised patients, particularly in those who have undergone organ transplantation.",
+          "The patient's timeline of 6 weeks post-transplant fits with the typical timeframe for CMV reactivation, which often occurs within the first few months after transplant."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a recent kidney transplant recipient on immunosuppression, presenting with fever, malaise, and abnormal LFTs, which are classic for a systemic viral syndrome.",
+          "The key clue is the rising viral load on quantitative nucleic acid testing, which indicates active viral replication, not just latent infection.",
+          "In the post-transplant setting, common viral pathogens to consider include cytomegalovirus (CMV), Epstein-Barr virus (EBV), BK polyomavirus, and adenovirus.",
+          "CMV is the most common cause of post-transplant viral syndrome, often presenting with non-specific symptoms like fever, malaise, and hepatitis around 1-3 months post-transplant.",
+          "EBV can cause similar symptoms but is more strongly associated with post-transplant lymphoproliferative disorder (PTLD), which typically presents later and often with lymphadenopathy or organ involvement.",
+          "BK virus primarily causes nephropathy and hemorrhagic cystitis, not typically hepatitis or a pronounced febrile syndrome, and adenovirus is less common and can cause more severe multi-organ disease.",
+          "Given the timing (6 weeks post-transplant), the symptom profile (fever, malaise, hepatitis), and the rising viral load, the most likely diagnosis is CMV reactivation or primary infection."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Upon initial presentation of fever, malaise, and mild derangement of LFTs in a post-transplant patient, my first concern is bacterial infection, given the non-specific nature of these symptoms.",
+          "However, the lack of localising symptoms and the presence of a rising viral load on nucleic acid testing suggests that a viral process is more likely.",
+          "CMV reactivation is a well-known complication of immunosuppression in transplant patients, and is a common cause of fever and LFT derangement in this population.",
+          "Furthermore, the timing of 6 weeks post-transplant places the patient at highest risk for CMV reactivation, which typically occurs between weeks 2-12 post-transplant.",
+          "Although EBV reactivation is also possible, the patient's symptoms are more typical of CMV, and the timing post-transplant makes CMV the more likely diagnosis.",
+          "The rising viral load on nucleic acid testing further supports the diagnosis of CMV reactivation.",
+          "Therefore, the most likely diagnosis is Cytomegalovirus (CMV) reactivation in this patient."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Post-transplant patients on immunosuppressants are like weakened fortresses, vulnerable to pathogens like CMV that are normally controlled by a healthy immune system. The 6-week timeline mirrors the 'CMV reactivation window' post-transplant, when immune suppression peaks. Fever and malaise without localized infection are the 'smoke without fire' of a systemic viral process. Mild LFT derangement behaves like a 'liver traffic jam' from CMV hepatitis, not a direct infection. Rising viral load on nucleic acid testing is the smoking gun—a 'biological GPS' tracking CMV replication in the blood."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q370",
+    "question": "A 28-year-old previously healthy man presents with a severe sore throat and was prescribed amoxicillin by his GP 5 days ago. He now returns with a new, widespread, non-pruritic maculopapular rash covering his trunk and limbs, alongside persistent fever and fatigue.",
+    "answer": "Epstein-Barr virus infection with antibiotic-induced rash",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "A severe sore throat in a previously healthy young adult raises suspicion for viral infections like Epstein-Barr virus (EBV) or bacterial causes such as streptococcal pharyngitis.",
+          "Empirical treatment with amoxicillin for presumed bacterial infection did not improve symptoms, suggesting a viral etiology instead.",
+          "The development of a widespread, non-pruritic maculopapular rash after amoxicillin exposure is characteristic of a drug rash commonly associated with EBV infection and aminopenicillin use.",
+          "Persistent fever and fatigue are consistent with the systemic symptoms of infectious mononucleosis caused by EBV.",
+          "The combination of sore throat, antibiotic-induced rash, and constitutional symptoms points to Epstein-Barr virus infection with an amoxicillin-induced rash.",
+          "Management should include discontinuing amoxicillin, providing supportive care for mononucleosis, and confirming the diagnosis with EBV serology or a monospot test.",
+          "Patient education on avoiding aminopenicillins in the future and monitoring for potential complications like splenomegaly is essential."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's presentation with a maculopapular rash, fever, and fatigue after starting amoxicillin suggests an adverse reaction to the antibiotic.",
+          "The patient was recently prescribed amoxicillin for a severe sore throat, which could be indicative of infectious mononucleosis, a condition known to cause sore throats and react with rash when treated with certain antibiotics.",
+          "Infectious mononucleosis is commonly caused by Epstein-Barr virus (EBV) infection, which often presents with sore throat, fever, and fatigue in young adults.",
+          "The presence of a maculopapular rash in this context is consistent with a drug reaction, specifically amoxicillin-induced rash, which is more common in patients with EBV infection.",
+          "The combination of clinical presentation and recent antibiotic use supports the conclusion that the patient has EBV infection with an antibiotic-induced rash.",
+          "The patient's age and symptoms are consistent with this diagnosis, making it a likely explanation for his presentation."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with a severe sore throat, persistent fever, fatigue, and a new widespread maculopapular rash that appeared after starting amoxicillin.",
+          "The initial consideration is a drug reaction, such as a hypersensitivity rash to amoxicillin, which is common and can be maculopapular.",
+          "However, the context of severe sore throat and persistent fever in a young adult should raise suspicion for infectious mononucleosis caused by Epstein-Barr virus (EBV).",
+          "A key clinical pearl is that patients with EBV infection who receive amoxicillin (or other beta-lactams) frequently develop a non-pruritic, maculopapular rash, which is not a true drug allergy but an immune-mediated reaction.",
+          "Alternative causes for the rash and symptoms, like scarlet fever, measles, or other viral exanthems, are less likely given the specific timing and association with amoxicillin use in this clinical setting.",
+          "Therefore, the most probable diagnosis is infectious mononucleosis from EBV, with the rash being precipitated by the amoxicillin therapy.",
+          "Management involves discontinuing the unnecessary antibiotic, supportive care, and confirming the diagnosis with heterophile antibody testing (Monospot) or EBV-specific serology."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial presentation of a widespread non-pruritic maculapapular rash, alongside persistent fever and fatigue in a young adult, raises concern for an infectious etiology.",
+          "On further consideration, the patient's rash and symptoms began after starting amoxicillin, suggesting an adverse drug reaction as a contributing factor.",
+          "However, this patient's symptoms began with a sore throat, which is a classic presentation for Epstein-Barr virus infection, particularly in young adults.",
+          "The concurrent development of a rash after starting amoxicillin is suggestive of an antibiotic-induced rash related to EBV infection.",
+          "Epstein-Barr virus infection is a common cause of infectious mononucleosis, which can present with sore throat, fever, and fatigue, and is often associated with a rash when treated with ampicillin or amoxicillin.",
+          "The patient's clinical presentation and the temporal relationship between starting antibiotics and developing a rash are most consistent with antibiotic-induced rash in the context of Epstein-Barr virus infection.",
+          "Therefore, the patient's symptoms are best explained by Epstein-Barr virus infection with an antibiotic-induced rash."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's severe sore throat aligns with Epstein-Barr virus (EBV) infection, a common cause of acute pharyngitis in young adults, much like the 'kissing disease' stereotype where symptoms mimic strep throat but without group A strep.",
+          "The antibiotic-induced rash mirrors a penicillin allergy reaction, but here it’s a cross-reactive hypersensitivity in the context of EBV infection, similar to how viral illnesses like HIV can trigger drug eruptions more readily.",
+          "Non-pruritic maculopapular rashes in EBV patients on amoxicillin are analogous to a 'secondary alarm'—the virus primes the immune system, making it overreact to the antibiotic like a sensitized smoke alarm triggered by cooking smoke.",
+          "Persistent fever and fatigue reinforce EBV as the primary driver, akin to a marathon runner (body) suddenly forced to run uphill (viral infection) while carrying extra weight (immune dysregulation).",
+          "The clinical picture resembles a two-step dance: EBV sets the stage for immune activation, and amoxicillin delivers the final step causing the rash, much like a chemical reaction needing both heat and a catalyst to proceed."
+        ]
+      }
+    ]
+  }
+]

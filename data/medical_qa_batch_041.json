@@ -1,0 +1,628 @@
+[
+  {
+    "id": "q401",
+    "question": "A 45-year-old woman, 6 weeks post-renal transplant on tacrolimus and mycophenolate, is admitted with confusion, headache, and photophobia over 3 days. She has been on prophylactic co-trimoxazole. Lumbar puncture reveals a lymphocytic pleocytosis, elevated protein, and low glucose. India ink stain of CSF is positive.",
+    "answer": "Cryptococcal meningitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's symptoms of confusion, headache, and photophobia over 3 days suggest an acute to subacute meningitis process.",
+          "Her immunocompromised status due to recent renal transplant and immunosuppressive therapy (tacrolimus and mycophenolate) raises suspicion for an opportunistic central nervous system infection.",
+          "CSF findings of lymphocytic pleocytosis, elevated protein, and low glucose are consistent with fungal or tuberculous meningitis, rather than typical bacterial or viral causes.",
+          "The positive India ink stain on CSF is a key diagnostic clue, as it visualizes the encapsulated yeast of Cryptococcus neoformans.",
+          "Therefore, the definitive diagnosis is cryptococcal meningitis, a common opportunistic infection in transplant recipients.",
+          "Initial management should include urgent antifungal therapy with amphotericin B and flucytosine, along with supportive care.",
+          "Long-term management requires fluconazole for consolidation and maintenance, along with careful adjustment of immunosuppressants to prevent relapse and rejection."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a positive India ink stain of CSF is diagnostic for Cryptococcal meningitis, which guides the management towards antifungal therapy.",
+          "The patient's symptoms of confusion, headache, and photophobia, combined with the CSF findings of lymphocytic pleocytosis, elevated protein, and low glucose, are consistent with a diagnosis of meningitis.",
+          "The patient's immunocompromised state, being 6 weeks post-renal transplant and on immunosuppressive therapy with tacrolimus and mycophenolate, increases her risk for opportunistic infections such as Cryptococcal meningitis.",
+          "The use of prophylactic co-trimoxazole reduces the risk of certain opportunistic infections, but it does not provide protection against Cryptococcus, making this diagnosis plausible.",
+          "The timeframe of 6 weeks post-transplant is within the period when opportunistic infections can start to manifest due to the immunosuppressed state.",
+          "The combination of clinical presentation and specific diagnostic test (India ink stain) points towards Cryptococcal meningitis as the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with subacute meningitis symptoms (confusion, headache, photophobia) and CSF findings of lymphocytic pleocytosis, elevated protein, and low glucose, indicating a chronic infectious or inflammatory process.",
+          "Given her status as a renal transplant recipient on immunosuppressive therapy (tacrolimus, mycophenolate), she is at high risk for opportunistic infections, including fungal, mycobacterial, or viral etiologies.",
+          "The positive India ink stain of the CSF is a classic, rapid diagnostic finding for Cryptococcus neoformans, which encapsulates and excludes the ink, creating a clear halo around the organism.",
+          "While other pathogens like Mycobacterium tuberculosis (TB meningitis) or viruses (e.g., HSV, VZV) can cause lymphocytic meningitis, they would not yield a positive India ink stain, which is specific for Cryptococcus.",
+          "Cryptococcal meningitis is a common opportunistic infection in transplant recipients, particularly with T-cell suppressing agents like tacrolimus, and can present with subacute symptoms and characteristic CSF findings.",
+          "Although she is on prophylactic co-trimoxazole, this primarily targets Pneumocystis jirovecii and some bacterial pathogens, but does not provide protection against Cryptococcus.",
+          "Therefore, integrating the clinical context, immunosuppressed state, CSF profile, and definitive positive India ink stain, the diagnosis is cryptococcal meningitis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of confusion, headache, and photophobia over 3 days in the context of immunosuppression suggests a possible central nervous system (CNS) infection.",
+          "However, the patient has been on prophylactic co-trimoxazole, which typically prevents Pneumocystis jirovecii pneumonia, a common concern in immunocompromised patients.",
+          "The lumbar puncture results of lymphocytic pleocytosis, elevated protein, and low glucose are indicative of an inflammatory process in the CNS, but do not specifically point towards a particular pathogen.",
+          "The presence of a lymphocytic pleocytosis rather than a polymorphonuclear pleocytosis makes bacterial meningitis less likely, and the low glucose and elevated protein suggest a more chronic or opportunistic process.",
+          "The positive India ink stain of CSF is highly suggestive of Cryptococcus neoformans, which is a common opportunistic pathogen in immunocompromised patients, particularly those with HIV/AIDS or those on long-term immunosuppression.",
+          "Given the patient's immunosuppressed state and the specific CSF findings, the most likely diagnosis is Cryptococcal meningitis.",
+          "The presence of co-trimoxazole prophylaxis does not rule out Cryptococcal meningitis, as this is typically effective against Pneumocystis jirovecii, not Cryptococcus neoformans."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's immunosuppressed state due to post-transplant medications (tacrolimus and mycophenolate) is like leaving a door unlocked, allowing opportunistic pathogens like Cryptococcus to enter.",
+          "Prophylactic co-trimoxazole acts as a shield against Pneumocystis and Toxoplasma but leaves the patient vulnerable to Cryptococcus, akin to a fortress guarded against some invaders but not all.",
+          "Confusion, headache, and photophobia over 3 days mimic a slow-burning fire in the brain, consistent with subacute meningitis rather than the sudden storm of bacterial infection.",
+          "Lymphocytic pleocytosis in CSF is like a calm but persistent storm, suggesting fungal or viral etiology rather than the neutrophilic ",
+          " of bacterial meningitis.",
+          "Low CSF glucose (hypoglycorrhachia) acts as a red flag for fungal or tuberculous infections, similar to a traffic signal warning of a biochemical ",
+          "A positive India ink stain is the Sherlock Holmes moment in CSF, definitively revealing Cryptococcus as the culprit through its characteristic capsular halo.",
+          "Intracranial pressure management is the priority (like bailing water from a sinking ship) before antifungal therapy, to prevent herniation in cryptococcal meningitis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q402",
+    "question": "A 32-year-old man with poorly controlled HIV (CD4 count 45) presents with a 2-week history of progressive dysphagia and retrosternal pain. OGD reveals multiple white, plaque-like lesions in the oesophagus that scrape off with difficulty, leaving a bleeding base.",
+    "answer": "Oesophageal candidiasis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's severe immunosuppression due to poorly controlled HIV (CD4 count 45) creates a high risk for opportunistic infections.",
+          "Progressive dysphagia and retrosternal pain over two weeks indicate an esophageal process, often infectious in this setting.",
+          "OGD reveals white, adherent plaques that bleed when scraped, which is a classic endoscopic appearance for fungal esophagitis.",
+          "In immunocompromised individuals, particularly with HIV, Candida species are the most common cause of such esophageal lesions.",
+          "The clinical presentation and endoscopic findings are highly consistent with esophageal candidiasis, without need for biopsy in typical cases.",
+          "Differential diagnoses like CMV or HSV esophagitis are less likely given the plaque-like morphology and bleeding on scraping.",
+          "Immediate management involves starting oral fluconazole and addressing the underlying HIV with antiretroviral therapy to prevent recurrence."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of white, plaque-like lesions in the oesophagus that scrape off with difficulty, leaving a bleeding base, is a characteristic endoscopic finding for oesophageal candidiasis.",
+          "The patient's symptoms of progressive dysphagia and retrosternal pain are consistent with oesophageal involvement by an infectious or inflammatory process.",
+          "The patient's severely compromised immune system, as indicated by a CD4 count of 45, increases his susceptibility to opportunistic infections such as oesophageal candidiasis.",
+          "Oesophageal candidiasis is a common condition in HIV-infected patients with low CD4 counts, and its presentation with dysphagia and characteristic endoscopic findings makes it a likely diagnosis in this case.",
+          "The difficulty in scraping off the lesions, leaving a bleeding base, helps to distinguish oesophageal candidiasis from other possible causes of oesophageal lesions, such as herpetic oesophagitis or pill-induced oesophagitis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with progressive dysphagia and retrosternal pain in the context of advanced immunosuppression (CD4 count 45) immediately suggests an opportunistic esophageal infection.",
+          "The endoscopic finding of white, plaque-like lesions that are adherent and leave a bleeding base when scraped is characteristic of a fungal process, most commonly Candida species, rather than viral causes like CMV or HSV which typically present as ulcers.",
+          "While CMV esophagitis is a consideration in this population, it usually manifests as large, shallow ulcers in the mid to distal esophagus, not as thick, adherent white plaques.",
+          "Herpes simplex virus (HSV) esophagitis typically causes multiple small, punched-out ulcers with raised edges, often with vesicles, which does not match the described plaque-like lesions.",
+          "Given the classic endoscopic appearance and the profound immunosuppression, esophageal candidiasis becomes the leading diagnosis, as it is the most common opportunistic esophageal infection in patients with AIDS.",
+          "Other conditions like idiopathic esophageal ulcers or medication-induced esophagitis are less likely given the plaque morphology and the patient's HIV status.",
+          "Therefore, the most probable diagnosis, aligning perfectly with the clinical and endoscopic findings, is esophageal candidiasis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "On initial examination, I suspect a malignancy given the patient's immunocompromised state and symptoms of progressive dysphagia and retrosternal pain.",
+          "However, the presence of white, plaque-like lesions that scrape off with difficulty, leaving a bleeding base on the OGD, makes oesophageal candidiasis more likely, particularly in a patient with poorly controlled HIV.",
+          "The patient's CD4 count of 45 suggests severe immunocompromise, which increases the risk of opportunistic infections such as oesophageal candidiasis.",
+          "Oesophageal candidiasis typically presents with symptoms of dysphagia and retrosternal pain, and the OGD findings are consistent with this diagnosis.",
+          "The difficulty in scraping off the lesions and the bleeding base are characteristic of oesophageal candidiasis, which is often associated with a fungal infection that adheres to the oesophageal mucosa.",
+          "Given the patient's immunocompromised state, symptoms, and OGD findings, I conclude that the most likely diagnosis is oesophageal candidiasis, which requires prompt antifungal treatment."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient’s severely suppressed immune system (CD4 45) is akin to a fortress with broken gates, making him vulnerable to opportunistic infections like oesophageal candidiasis. ",
+          "Progressive dysphagia and retrosternal pain resemble a clogged pipeline—obstruction and inflammation caused by fungal overgrowth in the oesophagus. ",
+          "White, plaque-like lesions that bleed when scraped are analogous to a scabbed-over wound: Candida forms a protective layer, but removal reveals an underlying raw surface. ",
+          "The scraping-off characteristic differentiates this from viral ulcers (e.g., herpes) or CMV, which typically do not slough off as easily. ",
+          "Treatment mirrors clearing a fungal infestation—antifungal therapy (e.g., fluconazole) targets the infection, while restoring immune function (via ART) rebuilds the fortress walls. "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q403",
+    "question": "A 65-year-old man with a history of COPD on long-term steroids is admitted with worsening respiratory failure. He has been on the ITU for 3 weeks, ventilated for severe community-acquired pneumonia. He remains febrile and systemically unwell despite meropenem and linezolid. Bronchoalveolar lavage grows septate hyphae.",
+    "answer": "Invasive pulmonary aspergillosis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "Step 1: The patient's long-term steroid use for COPD indicates immunosuppression, increasing susceptibility to opportunistic infections.",
+          "Step 2: He presents with severe respiratory failure requiring prolonged mechanical ventilation for community-acquired pneumonia, suggesting a complicated course.",
+          "Step 3: Persistent fever and systemic illness despite broad-spectrum antibiotics (meropenem and linezolid) point to an unresolved or non-bacterial infection.",
+          "Step 4: Bronchoalveolar lavage grows septate hyphae, a fungal element often associated with molds like Aspergillus.",
+          "Step 5: In immunocompromised hosts, such as those on steroids, Aspergillus is a common cause of invasive pulmonary disease.",
+          "Step 6: The combination of risk factors, clinical deterioration, and microbiological evidence confirms invasive pulmonary aspergillosis.",
+          "Step 7: Management involves initiating antifungal therapy (e.g., voriconazole) and reviewing immunosuppression to improve outcomes."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's clinical presentation of persistent fever and systemic illness despite broad-spectrum antibiotics suggests a secondary infection or complication.",
+          "The patient's history of COPD and long-term steroid use indicates immunosuppression, making him susceptible to opportunistic infections.",
+          "The growth of septate hyphae in the bronchoalveolar lavage is a key diagnostic clue, as it narrows the differential diagnosis to fungal infections.",
+          "The patient's prolonged stay on the ITU and recent history of severe community-acquired pneumonia also increase his risk for invasive fungal infections.",
+          "The combination of the patient's immunocompromised state, clinical presentation, and laboratory findings points towards an invasive fungal infection, specifically one caused by Aspergillus.",
+          "Invasive pulmonary aspergillosis is a well-known complication in immunocompromised patients, particularly those with prolonged neutropenia or steroid use, and is consistent with the growth of septate hyphae."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's persistent fever and systemic illness despite broad-spectrum antibiotics (meropenem and linezolid) suggest an infection not covered by this regimen, a non-bacterial pathogen, or a complication.",
+          "Key risk factors here are prolonged ICU stay, mechanical ventilation, COPD, and long-term steroid use, which significantly impair cell-mediated immunity and mucosal defenses.",
+          "The microbiologic clue is the growth of septate hyphae from bronchoalveolar lavage, which narrows the differential to filamentous fungi, most commonly Aspergillus or Mucorales.",
+          "Considering the clinical context of severe pneumonia in an immunocompromised host (from steroids) and the hyphal morphology, invasive pulmonary aspergillosis (IPA) is the leading diagnosis.",
+          "Alternative fungal infections like mucormycosis are less common and typically present with more aggressive tissue invasion and different risk factors (e.g., uncontrolled diabetes, iron overload), which are not highlighted here.",
+          "The diagnosis fits the classic scenario of 'ICU-acquired' or 'steroid-associated' aspergillosis, where a critically ill patient on steroids develops a superinfection that does not respond to antibacterial therapy.",
+          "Therefore, the correct diagnosis is invasive pulmonary aspergillosis, requiring prompt initiation of antifungal therapy such as voriconazole."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial impression is that the patient has developed a secondary bacterial infection given the prolonged antibiotic treatment, but the bronchoalveolar lavage (BAL) finding of septate hyphae raises suspicion of a fungal infection.",
+          "The patient's background of COPD, long-term steroid use, and prolonged ICU stay makes him immunocompromised and at risk for invasive fungal infections, particularly Aspergillus.",
+          "The patient's unresponsiveness to meropenem and linezolid, despite febrile and systemically unwell, suggests that the pneumonia is not caused by typical community-acquired bacteria.",
+          "The presence of septate hyphae on BAL is diagnostic of a fungal infection, and the morphology of septate hyphae is particularly suggestive of invasive Aspergillus given the patient's immunocompromised state.",
+          "While other fungal pathogens such as Mucorales can also be septate, the patient's background of COPD and long-term steroid use makes invasive Aspergillosis a more likely diagnosis.",
+          "However, the definitive diagnosis of invasive pulmonary Aspergillosis would typically be confirmed by either a positive galactomannan antigen test or histopathology showing Aspergillus hyphae invasion into lung tissue, neither of which is provided, but given the clinical context, it is the most likely diagnosis.",
+          "Therefore, the diagnosis of invasive pulmonary Aspergillosis is the most likely explanation for this patient's presentation, given the combination of his underlying immunocompromised state, failure to respond to bacterial antibiotics, and the presence of septate hyphae on BAL."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: The patient's long-term steroid use weakens his immune system, akin to a fortress with compromised gates, making him vulnerable to opportunistic infections like Aspergillus.",
+          "Step 2: Persistent fever and systemic illness despite broad-spectrum antibiotics suggest a non-bacterial cause, similar to a puzzle where the pieces don't fit the initial hypothesis.",
+          "Step 3: Septate hyphae on bronchoalveolar lavage point directly to invasive pulmonary aspergillosis, much like a fingerprint at the crime scene confirms the suspect.",
+          "Step 4: The 3-week ICU stay with ventilator support creates a perfect storm for fungal growth, akin to a drought followed by over-irrigation in a garden, promoting invasive pathogens.",
+          "Step 5: Targeted antifungal therapy with voriconazole becomes critical, analogous to using a precision-guided missile instead of a shotgun to neutralize the specific threat."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q404",
+    "question": "A 28-year-old woman with acute lymphoblastic leukaemia and profound neutropenia develops new onset of sharp right upper quadrant pain and fevers. Abdominal ultrasound is unremarkable. CT abdomen shows multiple hypodense lesions in the liver and spleen. Blood cultures remain negative after 5 days.",
+    "answer": "Hepatosplenic candidiasis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "Step 1: The patient has acute lymphoblastic leukemia with profound neutropenia, indicating severe immunosuppression and high risk for opportunistic infections.",
+          "Step 2: New onset sharp right upper quadrant pain and fevers in this context suggests an infectious process likely involving the liver or spleen.",
+          "Step 3: Abdominal ultrasound was unremarkable, but CT scan showed multiple hypodense lesions in the liver and spleen, highlighting CT's superior sensitivity for detecting such findings.",
+          "Step 4: Blood cultures remaining negative after 5 days makes bacterial sepsis less likely and points toward fungal or other atypical pathogens.",
+          "Step 5: The combination of neutropenia, hematologic malignancy, and multiple hypodense lesions in the liver and spleen is classic for hepatosplenic candidiasis, a form of disseminated fungal infection.",
+          "Step 6: Management should include initiating empirical antifungal therapy, such as an echinocandin, and considering imaging follow-up or biopsy for confirmation.",
+          "Step 7: Hepatosplenic candidiasis is the most probable diagnosis given the clinical presentation, imaging findings, and negative bacterial cultures."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of multiple hypodense lesions in the liver and spleen on CT abdomen in a patient with profound neutropenia and acute lymphoblastic leukaemia suggests an opportunistic infection.",
+          "The patient's symptoms of sharp right upper quadrant pain and fevers are non-specific but can be seen in a variety of infections, including fungal infections.",
+          "The fact that blood cultures remain negative after 5 days makes a diagnosis of septicaemia less likely, and points towards a localised infection.",
+          "The patient's immunocompromised state due to neutropenia and chemotherapy for acute lymphoblastic leukaemia increases her risk for fungal infections, including candidiasis.",
+          "The combination of imaging findings, clinical presentation, and negative blood cultures supports a diagnosis of hepatosplenic candidiasis, which is a known complication in immunocompromised patients.",
+          "Hepatosplenic candidiasis typically presents with fever, abdominal pain, and characteristic imaging findings, making it the most likely diagnosis in this case."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a neutropenic host with acute leukemia, presenting with RUQ pain, fever, and imaging showing multiple liver/spleen lesions, which raises concern for disseminated infection.",
+          "Common etiologies in this setting include bacterial infections (e.g., disseminated staphylococcal or gram-negative infections), fungal infections (especially Candida or Aspergillus), or less commonly, mycobacterial disease.",
+          "Negative blood cultures after 5 days make a typical bacteremia less likely, though not impossible, and point toward an infection that is often culture-negative or requires special cultures.",
+          "The imaging findings of multiple hypodense lesions in the liver and spleen are classic for hepatosplenic candidiasis (chronic disseminated candidiasis), a common complication in recovering neutropenic patients.",
+          "Alternative fungal causes like invasive aspergillosis typically cause lung involvement first and are less likely to present with isolated hepatosplenic microabscesses on CT in this context.",
+          "Given the clinical scenario of prolonged neutropenia, negative blood cultures, and characteristic CT findings, hepatosplenic candidiasis is the most probable diagnosis.",
+          "Definitive diagnosis often requires biopsy, but empirical antifungal therapy with an agent active against Candida (e.g., an echinocandin or amphotericin B) is typically initiated based on this high clinical suspicion."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Initial impression: The patient's presentation with acute abdominal pain, fever, and negative blood cultures suggests a possible case of diverticulitis or cholecystitis; however, the unremarkable abdominal ultrasound does not support this.",
+          "The presence of hypodense lesions on CT abdomen in the liver and spleen raises the suspicion for a hematogenous spread of an infection, but the negative blood cultures are puzzling.",
+          "Given the patient's profound neutropenia and history of acute lymphoblastic leukemia, I should consider an opportunistic infection that is more common in immunocompromised patients, such as candidiasis.",
+          "The hypodense lesions on CT abdomen are consistent with the radiographic findings of hepatosplenic candidiasis, which involves the spread of Candida to the liver and spleen through the bloodstream.",
+          "The negative blood cultures do not rule out hepatosplenic candidiasis, as this condition often presents with negative blood cultures due to the localized nature of the infection.",
+          "A diagnosis of hepatosplenic candidiasis is consistent with the patient's clinical presentation, laboratory findings, and radiographic results, and should be considered as the most likely explanation for her symptoms.",
+          "I am confident that the patient's symptoms are best explained by hepatosplenic candidiasis, given the combination of her immunocompromised state, negative blood cultures, and radiographic findings of hepatosplenic lesions."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A neutropenic patient's immune system is like a locked door forced open by opportunistic pathogens, with fungi like Candida exploiting these breaches.",
+          "The right upper quadrant pain and fevers mimic a viral hepatitis flare, but the CT's hypodense lesions in liver/spleen point to abscesses, not inflammation.",
+          "Negative blood cultures are akin to searching for smoke in an empty chimney—Candida may be sequestered in organ abscesses rather than circulating freely.",
+          "Hepatosplenic candidiasis in neutropenia is like a stealthy saboteur hiding in fortified castles (organs), evading detection by standard blood tests.",
+          "The clinical picture aligns with fungal invasion of the reticuloendothelial system, similar to how mold colonizes damp, dark corners of a building's framework."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q405",
+    "question": "A 60-year-old diabetic man with a history of total parenteral nutrition via a central line presents with new fever and rigors. Blood cultures from the central line and periphery grow Candida species. Fundoscopy reveals multiple white chorioretinal lesions.",
+    "answer": "Candida endophthalmitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "A diabetic patient on total parenteral nutrition via a central line presenting with fever and rigors suggests a catheter-associated bloodstream infection.",
+          "Blood cultures growing Candida species from both the central line and periphery confirm systemic candidemia.",
+          "Fundoscopic findings of multiple white chorioretinal lesions indicate hematogenous dissemination to the eye.",
+          "In the context of candidemia, these ocular lesions are characteristic of Candida endophthalmitis.",
+          "The diagnosis of Candida endophthalmitis necessitates urgent systemic antifungal therapy, central line removal, and ophthalmology consultation."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of multiple white chorioretinal lesions on fundoscopy in a patient with positive blood cultures for Candida species suggests an ocular manifestation of a systemic infection.",
+          "The patient's symptoms of fever and rigors along with positive blood cultures for Candida species indicate a systemic Candida infection.",
+          "The patient's history of total parenteral nutrition via a central line increases the risk of developing a central line-associated bloodstream infection, which in this case is caused by Candida species.",
+          "Candida species are a known cause of endophthalmitis, particularly in patients with indwelling central lines and those receiving total parenteral nutrition.",
+          "The combination of systemic Candida infection and characteristic ocular findings in this patient supports the diagnosis of an intraocular infection.",
+          "Given the evidence of systemic Candida infection and characteristic white chorioretinal lesions, the most likely diagnosis is Candida endophthalmitis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with fever, rigors, and Candida species isolated from both central and peripheral blood cultures indicates a systemic Candida infection, likely candidemia, often associated with central venous catheters and total parenteral nutrition.",
+          "Given the candidemia, the finding of multiple white chorioretinal lesions on fundoscopy strongly suggests hematogenous spread to the eye, a known complication of disseminated candidiasis.",
+          "The differential for white chorioretinal lesions in this context includes Candida endophthalmitis, but also other infectious etiologies like toxoplasmosis or viral retinitis, though the direct link to candidemia makes Candida the most probable.",
+          "Candida endophthalmitis typically presents with these fundoscopic findings and can occur even without overt ocular symptoms, making it a critical diagnosis to confirm in patients with candidemia to prevent vision loss.",
+          "Management must address both the systemic infection and the ocular involvement, requiring antifungal therapy effective in the eye, such as voriconazole or amphotericin B, and likely removal of the central line source.",
+          "The combination of candidemia with characteristic ocular lesions confirms the diagnosis of Candida endophthalmitis, distinguishing it from other forms of endophthalmitis or non-infectious retinopathies.",
+          "Thus, the integrated clinical picture—candidemia in a high-risk patient plus specific fundoscopic findings—leads directly to the diagnosis of Candida endophthalmitis as the correct answer."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of fever and rigors with positive blood cultures from the central line and periphery suggests a central line-associated bloodstream infection, likely a fungal etiology given the organism's identification as Candida species.",
+          "However, the finding of multiple white chorioretinal lesions on fundoscopy raises suspicion for an infectious process that has disseminated beyond the bloodstream, specifically to the eyes, given the patient's history of central line and immunocompromised state.",
+          "Given the patient's immunocompromised status due to diabetes and total parenteral nutrition, the combination of central line-associated Candida bloodstream infection and ocular findings points towards an opportunistic fungal infection, specifically Candida endophthalmitis.",
+          "The presence of white chorioretinal lesions on fundoscopy, a hallmark of endophthalmitis, is highly suggestive of Candida endophthalmitis given the patient's clinical context.",
+          "The high risk of Candida endophthalmitis in this patient population, coupled with the ocular findings and bloodstream infection, leads to the conclusion that the patient likely has Candida endophthalmitis.",
+          "The diagnosis of Candida endophthalmitis necessitates prompt ophthalmologic evaluation and treatment to prevent vision loss, given the potential for irreversible damage from delayed diagnosis and treatment."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's central line acts as a highway for Candida to bypass the body's defenses, much like a river overflows its banks and floods surrounding areas.",
+          "Total parenteral nutrition weakens host defenses akin to a drought-stricken landscape, making it easier for invasive species (Candida) to thrive.",
+          "Blood cultures from both central and peripheral sites confirm a systemic infection, like smoke visible in multiple rooms indicating a central fire source.",
+          "White chorioretinal lesions on fundoscopy are analogous to frost on a windshield—both represent frozen (silent) damage from an underlying temperature (infection) gradient.",
+          "Diabetes mellitus functions as a rusted gate, impairing the body's ability to combat invading pathogens like Candida.",
+          "The combination of systemic candidemia and ocular findings mirrors a hurricane's inland effects: while the storm (fungemia) hits first, it leaves behind secondary disasters (endophthalmitis) in its wake.",
+          "Candida endophthalmitis is the eye's equivalent of a satellite infection, similar to how a tree's roots spread disease to distant branches (metastatic infection)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q406",
+    "question": "A 58-year-old man on the surgical ward, day 5 post-hemicolectomy, is spiking temperatures. He has a central line in situ and has been on broad-spectrum IV antibiotics since surgery. He complains of general malaise but no localising symptoms. Bloods show a rising CRP.",
+    "answer": "Candidaemia / systemic candidiasis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient presents with spiking fevers and rising CRP on day 5 after abdominal surgery, indicating a likely infectious complication.",
+          "Common postoperative infections include surgical site infections, urinary tract infections, or pneumonia, but the absence of localizing symptoms makes these less likely.",
+          "The presence of a central line introduces the risk of catheter-related bloodstream infection, which can cause fever without local signs.",
+          "Broad-spectrum antibiotic use since surgery predisposes to fungal overgrowth by suppressing normal bacterial flora.",
+          "Candida species are opportunistic pathogens that can cause bloodstream infections in immunocompromised or critically ill patients, especially those with central venous catheters and on antibiotics.",
+          "The combination of central line, broad-spectrum antibiotics, non-specific febrile illness, and rising CRP is highly suggestive of candidemia or systemic candidiasis.",
+          "Therefore, blood cultures should be drawn, including from the central line and peripherally, and empiric antifungal therapy considered while awaiting culture results."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's clinical presentation of spiking temperatures, general malaise, and a rising CRP on day 5 post-surgery, despite being on broad-spectrum IV antibiotics, suggests a nosocomial infection that is not responding to current treatment.",
+          "The presence of a central line in situ increases the risk of bloodstream infections, including those caused by opportunistic pathogens.",
+          "Candida species are a common cause of nosocomial bloodstream infections, particularly in patients with central lines, who have been on broad-spectrum antibiotics, and are immunocompromised due to illness or recent surgery.",
+          "The patient's lack of localising symptoms makes a localised infection less likely and suggests a more systemic process.",
+          "Given the patient's risk factors and clinical presentation, Candidaemia/systemic candidiasis is a likely diagnosis that needs to be considered and investigated.",
+          "The rising CRP supports the presence of a systemic inflammatory response, consistent with Candidaemia/systemic candidiasis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a post-operative patient with fever, malaise, and rising CRP, indicating a systemic infection.",
+          "Common causes include surgical site infection, pneumonia, urinary tract infection, or line-associated infection, but he lacks localizing symptoms.",
+          "He has a central venous catheter and is on broad-spectrum antibiotics, which are major risk factors for altering normal flora and allowing fungal overgrowth.",
+          "Broad-spectrum antibiotics eliminate bacterial competition, and the central line provides a direct portal for Candida species, which are common skin commensals, to enter the bloodstream.",
+          "Given the persistent fever despite antibacterial therapy and the classic risk factor profile, candidemia becomes the leading diagnostic consideration.",
+          "This is further supported by the non-specific presentation (malaise without clear localizing signs) which is typical for invasive fungal infections in this setting.",
+          "Therefore, the most likely diagnosis is candidemia/systemic candidiasis, requiring blood cultures for fungi and consideration of empiric antifungal therapy."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Given the patient's rising CRP and general malaise despite broad-spectrum IV antibiotics, I initially suspect a bacterial infection such as a central line-associated bloodstream infection.",
+          "However, the patient has been on broad-spectrum antibiotics for 5 days, which should have covered most common bacteria, and there are no localising symptoms, making a bacterial infection less likely.",
+          "The patient's central line is a known risk factor for fungal infections, particularly Candida, and the broad-spectrum antibiotics may have also suppressed the normal gut flora, leading to overgrowth of Candida.",
+          "A rising CRP and spiking temperatures in a patient with a central line and broad-spectrum antibiotics are concerning for an invasive fungal infection, and Candidaemia is a potential diagnosis.",
+          "The patient's symptoms and lab results are consistent with Systemic Candidiasis, which is a known complication of central lines and broad-spectrum antibiotics.",
+          "Given the patient's clinical presentation and risk factors, I conclude that the most likely diagnosis is Candidaemia/Systemic Candidiasis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A central line in a post-surgical patient is like an open door for pathogens, especially when broad-spectrum antibiotics disrupt normal bacterial defenses, allowing opportunistic fungi like Candida to thrive.",
+          "Spiking fevers without localizing symptoms are like smoke without a visible fire, suggesting a systemic infection rather than a localized surgical complication.",
+          "Rising CRP in this context is the body’s alarm bell for ongoing inflammation, which could indicate fungal sepsis rather than a bacterial infection resistant to current antibiotics.",
+          "Candidaemia often masquerades as a persistent bacterial infection, similar to a mimicker in the bloodstream that evades standard antibiotic treatment.",
+          "The absence of localized symptoms despite a rising CRP is akin to a silent storm: the infection is widespread, but the immune response is diffuse and non-specific.",
+          "Central line removal and antifungal therapy are critical, as the line serves as both the entry point for Candida and a nidus for persistent infection, much like a splinter that keeps drawing bacteria into the bloodstream."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q407",
+    "question": "A 35-year-old woman with acute myeloid leukaemia, currently neutropenic following chemotherapy, presents with a new fever of 38.9°C. She is on prophylactic fluconazole. Chest X-ray is clear. She has a persistent dry cough and pleuritic chest pain.",
+    "answer": "Invasive aspergillosis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient has acute myeloid leukemia and is neutropenic following chemotherapy, which significantly compromises her immune system and increases the risk of severe infections.",
+          "A new fever in this neutropenic setting is a medical emergency, typically signaling an underlying infection that must be identified and treated urgently.",
+          "Prophylactic fluconazole is effective against Candida species but does not provide coverage for mold infections like Aspergillus, leaving her vulnerable to invasive aspergillosis.",
+          "Her symptoms of dry cough and pleuritic chest pain point to pulmonary involvement, but the clear chest X-ray suggests that the infection may not be visible on routine imaging, common in early invasive aspergillosis.",
+          "Based on the clinical presentation, risk factors, and lack of coverage from prophylaxis, invasive aspergillosis is the leading diagnostic consideration.",
+          "Immediate steps include obtaining a chest CT scan to look for characteristic findings such as nodules with a halo sign, and initiating antifungal therapy with voriconazole targeting Aspergillus.",
+          "Confirmation should be sought through bronchoscopy with bronchoalveolar lavage for galactomannan assay or culture, and treatment duration should be guided by resolution of symptoms and neutropenia."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's presentation with fever, dry cough, and pleuritic chest pain in the setting of neutropenia and immunosuppression following chemotherapy suggests an opportunistic infection.",
+          "The patient's prophylactic use of fluconazole, which has limited activity against moulds, increases the likelihood of an infection caused by a mould, such as Aspergillus.",
+          "The clear chest X-ray does not rule out invasive aspergillosis, as early in the disease, the chest X-ray can be normal, and abnormalities may only appear later.",
+          "The patient's symptoms of dry cough and pleuritic chest pain are consistent with pulmonary involvement, which is a common presentation of invasive aspergillosis in immunocompromised patients.",
+          "The combination of neutropenia, immunosuppression, prophylactic fluconazole use, and clinical presentation makes invasive aspergillosis a more likely diagnosis than a typical bacterial infection or other fungal infections.",
+          "Invasive aspergillosis is a well-known complication in neutropenic patients with haematological malignancies, such as acute myeloid leukaemia, and requires prompt consideration and treatment."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a neutropenic host with AML, presenting with new fever, which raises immediate concern for an infection, likely bacterial or fungal, given her immunocompromised state.",
+          "The presence of a dry cough and pleuritic chest pain suggests a pulmonary process, but the clear chest X-ray makes typical bacterial pneumonia less likely at this early stage.",
+          "Prophylactic fluconazole provides coverage against Candida species but has no activity against molds like Aspergillus, leaving her vulnerable to breakthrough invasive fungal infections.",
+          "In neutropenic patients, a clear chest X-ray does not rule out invasive pulmonary aspergillosis; early infection often presents with subtle symptoms and may not show classic radiographic signs like a halo sign initially.",
+          "The combination of neutropenia, fever, respiratory symptoms (cough, pleuritic pain) despite a clear CXR, and fluconazole prophylaxis strongly points towards a mold infection, with invasive aspergillosis being the most common and likely diagnosis in this setting.",
+          "Alternative considerations like viral infections or drug reactions are less probable given the clinical context of profound neutropenia and the specific symptom complex.",
+          "Therefore, invasive aspergillosis is the most appropriate diagnosis to pursue urgently with further investigations such as a chest CT scan and serum or bronchoalveolar lavage galactomannan testing."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "My initial impression is that the patient has a typical viral upper respiratory tract infection given her symptoms and fever, but the patient's neutropenic state after chemotherapy makes me more cautious.",
+          "However, the patient's persistent dry cough and pleuritic chest pain suggest that the cause of her fever may be more significant than a simple viral infection, and her prophylactic fluconazole may actually make me less likely to consider a typical fungal infection like candidiasis.",
+          "The patient's symptoms persist despite being on prophylactic fluconazole, which raises concern for an infection not adequately covered by this medication, such as Pseudomonas or Nocardia, but Invasive Aspergillosis is still a concern given the patient's immunocompromised state.",
+          "The patient's neutropenic state and recent chemotherapy also increase her risk for invasive fungal infections, particularly Invasive Aspergillosis, which often presents with similar symptoms like dry cough and pleuritic chest pain.",
+          "Given the patient's clear chest X-ray and the fact that she is on prophylactic fluconazole, I should be more concerned about a parenchymal fungal infection like Invasive Aspergillosis rather than a typical bacterial infection.",
+          "Therefore, considering the patient's risk factors, symptoms, and prophylactic antifungal therapy, Invasive Aspergillosis is the most likely diagnosis.",
+          "Based on the patient's high-risk profile and the fact that the symptoms do not seem to be improving on standard antibiotics, I would proceed with a high suspicion for Invasive Aspergillosis and recommend further diagnostic testing such as a CT scan of the chest and possibly a bronchoalveolar lavage."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A neutropenic patient is like a fortress with weakened defenses, making them vulnerable to invasive pathogens like Aspergillus, which can bypass prophylactic fluconazole (effective against yeasts, not molds).",
+          "Fever in this context is the alarm bell: in neutropenic patients, even a single febrile episode often signals a serious infection like invasive aspergillosis.",
+          "A clear chest X-ray is a deceptive 'red herring'—while it rules out common pneumonia, it doesn’t exclude aspergillosis, which may appear as nodules or halos on CT scans, not plain X-rays.",
+          "Dry cough and pleuritic chest pain are the body’s 'screams' of lung tissue invasion by Aspergillus, which thrives in immunosuppressed hosts by invading blood vessels and causing necrosis.",
+          "Fluconazole, like a shield against fungal armies, protects against Candida but leaves the patient exposed to Aspergillus mold, which requires targeted antifungal therapy like voriconazole.",
+          "This case mirrors a 'Trojan horse' scenario: the infection is hidden from initial imaging but attacks aggressively once inside the immunocompromised host’s defenses.",
+          "Just as a plant grows unseen in dry soil until it bursts through the surface, Aspergillus may silently establish itself in neutropenic lungs before causing visible signs on imaging."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q408",
+    "question": "A 70-year-old man, two weeks into a prolonged ICU stay for pneumonia, is on multiple antibiotics and total parenteral nutrition via a central line. He has new-onset confusion and a temperature of 38.5°C. Fundoscopy is requested.",
+    "answer": "Candida endophthalmitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's prolonged ICU stay, use of multiple antibiotics, and total parenteral nutrition via a central line predispose him to healthcare-associated infections, including fungal sepsis.",
+          "New-onset confusion and fever in this setting suggest systemic infection, necessitating evaluation for sources such as catheter-related bloodstream infection.",
+          "Broad-spectrum antibiotic therapy disrupts normal flora, increasing the risk of candidemia, which is further supported by the presence of a central venous catheter.",
+          "Fundoscopy is requested to look for metastatic infectious foci, as the eye is a common site for seeding in disseminated candidiasis.",
+          "Candida endophthalmitis presents with characteristic retinal lesions and is a frequent complication of candidemia in critically ill patients.",
+          "Thus, the clinical presentation and fundoscopic findings confirm Candida endophthalmitis as the cause of his fever and confusion."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's new-onset confusion and fever in the ICU setting suggest a systemic infection that could have ocular manifestations.",
+          "The patient is at high risk for fungal infections, including candidemia, due to prolonged antibiotic use and total parenteral nutrition.",
+          "Candidemia can lead to hematogenous spread to various organs, including the eyes, resulting in endophthalmitis.",
+          "The presence of a central line increases the risk of bloodstream infections, including fungal infections.",
+          "Candida endophthalmitis is a known complication of candidemia and would present with ocular symptoms that could be detected on fundoscopy.",
+          "Fundoscopy is a critical diagnostic tool for detecting endophthalmitis, which would appear as white or yellowish lesions in the retina."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a critically ill, immunocompromised ICU patient on broad-spectrum antibiotics and TPN, presenting with new fever and confusion, raising concern for a systemic infection.",
+          "Central line-associated bloodstream infection (CLABSI) is a leading consideration, and Candida species are a common cause of CLABSI in this specific clinical setting of prolonged antibiotics, TPN, and critical illness.",
+          "Hematogenous seeding from a Candida bloodstream infection can lead to metastatic infection in the eye, known as Candida endophthalmitis.",
+          "Fundoscopy is a key diagnostic test to look for characteristic findings of endophthalmitis, such as fluffy white chorioretinal lesions, which would confirm this metastatic complication.",
+          "Identifying Candida endophthalmitis fundamentally changes management, as it signifies disseminated infection requiring prolonged systemic antifungal therapy and likely central line removal.",
+          "Alternative causes of fever and confusion in the ICU (e.g., bacterial sepsis, ICU delirium, drug fever) are less specifically linked to the diagnostic clue of fundoscopy being requested.",
+          "Therefore, the most specific and unifying diagnosis linking the risk factors, clinical presentation, and planned investigation is Candida endophthalmitis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's new-onset confusion and fever suggest a possible central nervous system infection or sepsis, but the presence of a central line and total parenteral nutrition raises concern for a catheter-associated complication.",
+          "The patient is on multiple antibiotics, which might reduce the likelihood of a bacterial infection, but the persistent fever and confusion remain concerning and could be indicative of a fungal infection.",
+          "Candida species are a common cause of catheter-associated bloodstream infections, particularly in immunocompromised patients or those with prolonged exposure to broad-spectrum antibiotics.",
+          "Given the patient's prolonged ICU stay and central line, Candida endophthalmitis should be considered, as it is a known complication of catheter-associated candidemia.",
+          "Fundoscopy is a critical diagnostic tool for identifying Candida endophthalmitis, as it can reveal characteristic white, fluffy lesions on the retina, and prompt treatment is essential to prevent vision loss.",
+          "The presence of Candida endophthalmitis would explain the patient's new-onset confusion, as fungal toxins can cause a range of systemic symptoms, including altered mental status."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The patient's prolonged ICU stay and central line place him at high risk for bloodstream infections, akin to a cracked dam allowing pathogens to flood the body. Fundoscopy is requested to check for Candida endophthalmitis, a downstream complication when fungal emboli from the central line travel like smoke through a chimney to the eye. Prolonged broad-spectrum antibiotics have stripped away normal flora, creating an ecological niche for Candida to thrive like invasive weeds in disturbed soil. The new confusion and fever suggest a sepsis-like picture, with Candida acting as a stealthy intruder exploiting the immunosuppressed state of critical illness. Total parenteral nutrition further weakens gut barrier defenses, similar to a levee breach unleashing a flood of translocation and opportunistic infection."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q409",
+    "question": "A 45-year-old man, HIV-positive with a low CD4 count, presents with a two-week history of worsening headache, fever, and nausea. On examination, he has neck stiffness. He is alert but slow to answer questions.",
+    "answer": "Cryptococcal meningitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient presents with headache, fever, nausea, neck stiffness, and slowed mentation, which are indicative of meningeal irritation and possible increased intracranial pressure.",
+          "His HIV-positive status with low CD4 count places him at high risk for opportunistic infections affecting the central nervous system.",
+          "The subacute progression over two weeks and the constellation of symptoms narrow the differential to causes like cryptococcal meningitis, tuberculous meningitis, or lymphomatous meningitis.",
+          "Cryptococcal meningitis is the most common fungal meningitis in AIDS patients and often presents with this clinical picture.",
+          "A lumbar puncture is essential; cerebrospinal fluid analysis would likely show elevated opening pressure, lymphocytic pleocytosis, and positive cryptococcal antigen.",
+          "Immediate management includes antifungal therapy with amphotericin B and flucytosine, along with measures to control intracranial pressure."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's presentation with worsening headache, fever, nausea, and neck stiffness suggests a diagnosis of meningitis.",
+          "The patient's HIV-positive status with a low CD4 count indicates a compromised immune system, making him susceptible to opportunistic infections.",
+          "The patient's slow response to questions suggests possible cerebral involvement or increased intracranial pressure, which is consistent with cryptococcal meningitis.",
+          "Cryptococcal meningitis is a common opportunistic infection in HIV patients with low CD4 counts, typically presenting with symptoms of meningitis.",
+          "The combination of the patient's immunocompromised state, symptoms of meningitis, and altered mental status points towards Cryptococcal meningitis as the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation of subacute headache, fever, nausea, and neck stiffness in an immunocompromised host (HIV with low CD4) strongly suggests an opportunistic CNS infection.",
+          "Initial differential diagnosis includes cryptococcal meningitis, tuberculous meningitis, CNS toxoplasmosis, and less likely, primary CNS lymphoma or progressive multifocal leukoencephalopathy (PML).",
+          "Cryptococcal meningitis is a leading cause of meningitis in advanced HIV, typically presenting with this subacute course and possible altered mental status, making it a top consideration.",
+          "Tuberculous meningitis often has a more protracted prodrome and may have cranial nerve palsies or stroke, but it remains possible; CNS toxoplasmosis typically presents with focal deficits and ring-enhancing lesions on imaging, which are not described here.",
+          "The absence of focal neurological deficits or seizures makes toxoplasmosis less likely, and the alert mental state (though slow) argues against the severe obtundation sometimes seen in advanced bacterial meningitis.",
+          "A lumbar puncture would be critical; in cryptococcal meningitis, CSF often shows high opening pressure, lymphocytic pleocytosis, positive India ink stain, and a positive cryptococcal antigen test, which is highly sensitive and specific.",
+          "Given the clinical profile and the high pretest probability in this setting, cryptococcal meningitis is the most likely diagnosis, and empiric antifungal therapy with amphotericin B and flucytosine should be initiated while awaiting confirmatory tests."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Based on the patient's HIV-positive status and low CD4 count, my initial impression is that he is at risk for opportunistic infections, such as Pneumocystis jirovecii pneumonia or tuberculosis.",
+          "However, the presence of headache, fever, and nausea, particularly with neck stiffness, makes me consider a central nervous system (CNS) infection, which is more consistent with cryptococcal meningitis given the patient's immunocompromised state.",
+          "Cryptococcal meningitis is a common CNS infection in HIV-positive patients with low CD4 counts, often presenting with headache, fever, and altered mental status, which aligns with this patient's symptoms.",
+          "I am reminded that cryptococcal meningitis often has a more insidious onset than bacterial meningitis, with symptoms developing over days to weeks, which fits with this patient's two-week history of worsening symptoms.",
+          "It is worth noting that the patient's slow response to questions may indicate altered mental status, which is consistent with meningitis, particularly cryptococcal meningitis, which can cause cognitive impairment and confusion.",
+          "Furthermore, the patient's immunocompromised state increases his risk for cryptococcal meningitis, and the presence of neck stiffness is a classic sign of meningitis, making this diagnosis more likely."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A 45-year-old HIV-positive man with low CD4 counts is like a weakened garden vulnerable to invasive weeds—cryptococcus is one such weed that flourishes in immunosuppressed soil. The two-week history of symptoms suggests a fungal infection rather than acute bacterial processes. Neck stiffness and fever mirror bacterial meningitis, but the subacute onset fits fungal patterns. Cryptococcal meningitis often mimics a slow-growing vine, causing pressure on the brain over days to weeks. The alert but slow mental status contrasts with the rapid confusion seen in bacterial cases, aligning with cryptococcal's subtler, creeping nature."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q410",
+    "question": "A 28-year-old man, an intravenous drug user, is admitted with a two-month history of fever, night sweats, and a 6kg weight loss. He has a new heart murmur. Blood cultures from admission are still negative at 48 hours.",
+    "answer": "Fungal endocarditis (e.g., Candida species)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's subacute symptoms of fever, night sweats, weight loss, and new heart murmur are classic for infective endocarditis.",
+          "Intravenous drug use is a significant risk factor for endocarditis, often introducing atypical pathogens through contaminated injection materials.",
+          "Negative blood cultures at 48 hours exclude common bacterial causes and raise suspicion for fastidious organisms or fungi.",
+          "The prolonged two-month course aligns with subacute endocarditis, which in IV drug users, frequently involves unusual agents like fungi.",
+          "Fungal endocarditis, particularly due to Candida species, is a common cause of culture-negative endocarditis in this population.",
+          "Diagnostic confirmation requires echocardiography to detect vegetations and specialized tests such as fungal blood cultures or serology.",
+          "Management involves prolonged antifungal therapy and often surgical valve intervention due to the risk of embolization and treatment failure."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a new heart murmur in a patient with a history of intravenous drug use suggests infective endocarditis.",
+          "The patient's symptoms of fever, night sweats, and significant weight loss over two months indicate a chronic infection.",
+          "Negative blood cultures at 48 hours in a patient with suspected endocarditis and a history of intravenous drug use raise the suspicion for fungal endocarditis.",
+          "Fungal endocarditis is more likely to have negative blood cultures due to the fastidious nature of the organisms, such as Candida species.",
+          "The patient's history of intravenous drug use is a significant risk factor for fungal endocarditis, particularly with Candida species.",
+          "The clinical presentation and laboratory findings are less typical for bacterial endocarditis, making fungal endocarditis a more likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with subacute constitutional symptoms (fever, night sweats, weight loss) and a new heart murmur, strongly suggesting infective endocarditis.",
+          "Given his history of intravenous drug use, common causative organisms include Staphylococcus aureus, streptococci, and enterococci, but these typically yield positive blood cultures within 48 hours.",
+          "The persistently negative blood cultures at 48 hours, despite a clinical picture of endocarditis, indicate a culture-negative endocarditis scenario.",
+          "Culture-negative endocarditis in an IV drug user raises suspicion for fastidious organisms (e.g., Bartonella, Coxiella) or organisms not detected by routine bacterial cultures, such as fungi.",
+          "Fungal endocarditis, particularly with Candida species, is a recognized cause in IV drug users, often associated with indolent presentation, large vegetations, and frequently negative routine blood cultures.",
+          "Other possibilities like HACEK organisms or Coxiella burnetii (Q fever) are less common in this specific risk group compared to fungal infections linked to contaminated injection materials.",
+          "Therefore, the most likely diagnosis given the epidemiology, clinical course, and culture data is fungal endocarditis, with Candida being the most common pathogen."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's symptoms of fever, night sweats, and significant weight loss over two months suggest an infectious process involving a chronic infection.",
+          "The presence of a new heart murmur increases the suspicion for an infective endocarditis given the patient's risk factors.",
+          "The patient's history as an intravenous drug user significantly increases his risk for infective endocarditis, particularly with fungal pathogens.",
+          "The negative blood cultures at 48 hours do not rule out fungal endocarditis, as fungal pathogens may require longer incubation periods for growth.",
+          "Fungal endocarditis is a more likely diagnosis than bacterial endocarditis given the patient's negative blood cultures and chronic infection symptoms.",
+          "Candida species are a common cause of fungal endocarditis in intravenous drug users.",
+          "The patient's presentation is most consistent with fungal endocarditis, likely caused by Candida species."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: The patient's IV drug use is a red flag for endocarditis, akin to a broken lock leaving the door wide open for pathogens like bacteria or fungi.  \nStep 2: Fever, weight loss, and night sweats are nonspecific but persistent, much like a smoke signal from a distant fire—hinting at an ongoing infection.  \nStep 3: A new heart murmur suggests valvular damage, like a clogged pipe disrupting normal water flow, here disrupting blood flow.  \nStep 4: Negative blood cultures at 48 hours are suspicious, similar to a hidden mold growing in a damp cellar—slow-growing fungi like Candida evade quick detection.  \nStep 5: Fungal endocarditis (e.g., Candida) fits best, as IV drug users often have indwelling catheters or immune compromise, creating soil for fungal spores to take root.  \nStep 6: This is analogous to a slow-burning ember in a fireplace; standard tests miss it initially, but prolonged observation and targeted fungal cultures are needed.  \nStep 7: Treatment mirrors eradicating a stubborn weed—long-term antifungals and surgical valve replacement if the ",
+          " has deeply invaded the heart valve."
+        ]
+      }
+    ]
+  }
+]

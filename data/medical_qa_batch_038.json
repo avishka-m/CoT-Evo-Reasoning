@@ -1,0 +1,632 @@
+[
+  {
+    "id": "q371",
+    "question": "A 45-year-old man with advanced HIV (CD4 count 80) presents with a 2-week history of worsening dyspnoea and a dry cough. He is febrile and hypoxic on room air. A chest X-ray shows diffuse bilateral interstitial infiltrates. He has no productive sputum.",
+    "answer": "Cytomegalovirus pneumonitis",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's advanced HIV with a CD4 count of 80 indicates severe immunosuppression, predisposing him to opportunistic infections.",
+          "Clinical features of dyspnea, dry cough, fever, hypoxia, and chest X-ray showing diffuse bilateral interstitial infiltrates suggest an atypical pneumonia.",
+          "The absence of productive sputum reduces the likelihood of bacterial pneumonia, pointing towards opportunistic pathogens like Pneumocystis jirovecii or cytomegalovirus.",
+          "In HIV patients with CD4 counts below 100, cytomegalovirus pneumonitis is a common cause of interstitial pneumonia, especially with this radiographic pattern.",
+          "Diagnostic evaluation should include bronchoscopy with bronchoalveolar lavage for CMV PCR or culture and to exclude other infections such as PCP.",
+          "Empirical treatment for PCP with trimethoprim-sulfamethoxazole is warranted initially, but high suspicion for CMV may prompt addition of ganciclovir.",
+          "Confirmed CMV pneumonitis requires antiviral therapy with ganciclovir, supportive care, and optimization of antiretroviral therapy to improve immune recovery."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's presentation with worsening dyspnea, dry cough, fever, and hypoxia, along with diffuse bilateral interstitial infiltrates on chest X-ray, suggests an opportunistic pulmonary infection.",
+          "The patient's advanced HIV status with a low CD4 count of 80 indicates a severely compromised immune system, making him susceptible to opportunistic infections.",
+          "The absence of productive sputum reduces the likelihood of bacterial pneumonia and makes a diagnosis of Pneumocystis jirovecii pneumonia (PCP) less likely, although it cannot be entirely ruled out without further testing.",
+          "Cytomegalovirus (CMV) pneumonitis is a well-known opportunistic infection in immunocompromised patients, particularly those with HIV/AIDS and low CD4 counts.",
+          "The clinical presentation of CMV pneumonitis, which includes symptoms such as dyspnea, cough, fever, and bilateral interstitial infiltrates on chest X-ray, matches the patient's symptoms and findings.",
+          "Given the patient's immunocompromised state and the specific clinical presentation, CMV pneumonitis becomes a leading consideration for the diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with subacute dyspnea, dry cough, fever, hypoxia, and bilateral interstitial infiltrates in the setting of advanced HIV (CD4 < 200) strongly suggests an opportunistic pulmonary infection.",
+          "Common opportunistic pathogens in this context include Pneumocystis jirovecii (PJP), Mycobacterium tuberculosis, and fungi like Cryptococcus or Histoplasma, but the dry cough and interstitial pattern are classic for PJP.",
+          "However, the absence of productive sputum and the specific CD4 count of 80 also places cytomegalovirus (CMV) pneumonitis high on the differential, as severe CMV disease typically occurs at CD4 counts < 50-100.",
+          "A key distinguishing factor is that PJP typically presents with more severe hypoxia and an elevated lactate dehydrogenase (LDH), while CMV pneumonitis can have an identical radiographic appearance but may be associated with systemic CMV findings (e.g., retinitis).",
+          "Given the profound immunosuppression, the diagnostic approach would include induced sputum or bronchoalveolar lavage for PCR and staining; a negative test for PJP would significantly increase the probability of CMV as the causative agent.",
+          "Empirical treatment for PJP with trimethoprim-sulfamethoxazole and corticosteroids would be initiated immediately while awaiting diagnostics, but a lack of response would further point towards an alternative like CMV.",
+          "Ultimately, with advanced HIV, bilateral interstitial infiltrates, and a very low CD4 count, CMV pneumonitis is the most specific correct answer, as it is a common and serious viral complication in this exact clinical scenario."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of dyspnoea, dry cough, and hypoxia in the setting of advanced HIV suggests a serious opportunistic infection.",
+          "Given the CD4 count of 80, the patient is at increased risk for Pneumocystis jirovecii pneumonia, which typically presents with a dry cough and hypoxia, but the diffuse bilateral interstitial infiltrates on the chest X-ray are more consistent with CMV pneumonitis.",
+          "CMV pneumonitis often presents with non-productive cough and hypoxia, and the patient's lack of productive sputum makes Pneumocystis jirovecii pneumonia less likely.",
+          "Although the patient's HIV status and CD4 count suggest a high risk for Pneumocystis jirovecii pneumonia, the radiographic findings of diffuse bilateral interstitial infiltrates, rather than ground-glass opacifications, suggest CMV pneumonitis.",
+          "CMV pneumonitis is more common in immunocompromised patients with CD4 counts below 100, which is consistent with the patient's presentation and CD4 count of 80.",
+          "The combination of the patient's symptoms, radiographic findings, and immunocompromised status make CMV pneumonitis the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "CMV pneumonitis in HIV is like a stealthy intruder, similar to how CMV infects immunocompromised individuals without typical symptoms, much like a virus that hides in the body until the immune system is severely weakened."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q372",
+    "question": "A 60-year-old woman presents with severe, persistent pain over her right forehead and scalp for 6 weeks. She had a vesicular rash in the same distribution which crusted and healed over 2 weeks, but the pain has not subsided and is described as sharp and shooting. The skin is now clear.",
+    "answer": "Post-herpetic neuralgia",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's presentation of severe, persistent pain in a unilateral dermatomal distribution (right forehead and scalp) raises suspicion for a neuropathic condition.",
+          "The history of a preceding vesicular rash in the same area that crusted and healed over two weeks is classic for acute herpes zoster infection.",
+          "Persistence of pain for six weeks beyond the resolution of the rash aligns with the diagnostic criteria for post-herpetic neuralgia, which is pain lasting after the acute phase of shingles.",
+          "The quality of the pain as sharp and shooting further supports a neuropathic origin, consistent with post-herpetic neuralgia.",
+          "The patient's age of 60 years increases the risk for post-herpetic neuralgia, as older adults are more susceptible to this complication.",
+          "Physical examination revealing clear skin confirms the absence of active infection, narrowing the focus to post-herpetic neuralgia as the cause of ongoing pain.",
+          "Appropriate management includes initiating neuropathic pain medications such as gabapentin, pregabalin, or amitriptyline, and considering topical agents like lidocaine patches."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's pain is described as sharp and shooting, and has persisted for 6 weeks, indicating a chronic pain condition.",
+          "The presence of a preceding vesicular rash that crusted and healed suggests a viral etiology, specifically herpes zoster (shingles).",
+          "The rash and pain are localized to the same dermatomal distribution (right forehead and scalp), which is consistent with herpes zoster.",
+          "The patient's age (60 years) puts her at higher risk for developing post-herpetic neuralgia (PHN), a complication of herpes zoster.",
+          "The duration of pain (> 4 weeks) and its severity meet the diagnostic criteria for post-herpetic neuralgia.",
+          "The absence of current rash or other symptoms and the clear skin on examination make other causes of neuropathic pain less likely."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's history of a vesicular rash in a dermatomal distribution (right forehead and scalp) that crusted and healed is classic for herpes zoster (shingles).",
+          "The key diagnostic feature is the persistence of severe neuropathic pain (sharp, shooting) in the same distribution for 6 weeks after the rash has healed, with clear skin on exam.",
+          "This temporal pattern—pain continuing beyond the typical rash healing phase—defines post-herpetic neuralgia (PHN), a common complication of shingles.",
+          "Alternative causes for localized head pain, such as trigeminal neuralgia or migraine, are less likely without the characteristic rash history and the clear temporal link to the healed vesicular eruption.",
+          "Management would focus on neuropathic pain agents (e.g., gabapentin, tricyclic antidepressants) and possibly topical lidocaine, confirming the diagnosis of PHN guides appropriate therapy.",
+          "The absence of ongoing rash or new neurological deficits makes complications like herpes zoster ophthalmicus or encephalitis unlikely at this stage.",
+          "Therefore, the most accurate diagnosis for this persistent pain following healed shingles is post-herpetic neuralgia."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The patient's presentation of severe, persistent pain over her forehead and scalp following a vesicular rash is initially concerning for chronic pain, but the rash's characteristic distribution and healing pattern are not immediately recognizable.",
+          "However, recalling that herpes zoster (shingles) often presents with a vesicular rash, followed by a painful phase that can persist long after the rash has cleared, the possibility of post-herpetic neuralgia (PHN) arises.",
+          "PHN typically occurs in individuals over 60 years of age, aligning with the patient's demographic, and the symptoms described - sharp, shooting pain - are consistent with this condition.",
+          "While other causes of chronic pain, such as migraines or tension headaches, must be considered, the temporal relationship between the vesicular rash and the persistent pain, as well as the patient's age, makes PHN a more plausible diagnosis.",
+          "The resolution of the vesicular rash and the persistence of pain support this diagnosis, as PHN is a complication of herpes zoster that can occur after the rash has healed.",
+          "Moreover, the fact that the skin is now clear reduces the likelihood of other skin conditions causing the pain, further supporting the diagnosis of PHN.",
+          "Based on the patient's presentation, age, and symptomatology, post-herpetic neuralgia is the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The woman's persistent pain after a healed shingles rash is like a burnt-out fuse still sparking—damage to the nerve (the fuse) causes ongoing pain even after the visible rash (the spark) is gone.",
+          "Varicella-zoster virus, which initially caused the vesicular rash, acts like a saboteur damaging the sensory nerves, leaving them hypersensitive long after the skin heals.",
+          "Post-herpetic neuralgia is akin to a car alarm that keeps blaring after the car has been fixed—the nervous system’s alarm system is misfiring due to residual viral-induced nerve injury.",
+          "Pain described as sharp and shooting resembles static electricity shocks from a frayed wire—damaged nerves send erratic signals even without external triggers.",
+          "This condition is the most common complication of shingles in older adults, similar to how rust corrodes metal over time; age weakens the body’s ability to repair nerve damage efficiently.",
+          "Treatment options mirror a multi-tool for a leaky pipe: anticonvulsants (like a wrench tightening the leak), antidepressants (a sealant), and lidocaine patches (a temporary plug) target different aspects of nerve pain.",
+          "Early intervention is critical, much like extinguishing a fire before it spreads; delaying treatment risks chronic pain becoming entrenched like a deep-rooted weed."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q373",
+    "question": "A 4-month-old infant is brought to the emergency department in December with a 2-day history of runny nose and cough. Over the last 12 hours, they have developed a fever, poor feeding, and you note tachypnoea with widespread fine inspiratory crackles and wheeze on auscultation.",
+    "answer": "Bronchiolitis (RSV)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "Step 1: The presentation of a 4-month-old infant with runny nose and cough suggests an initial viral upper respiratory infection.",
+          "Step 2: The development of fever, poor feeding, and tachypnea over 12 hours indicates progression to systemic illness and respiratory distress.",
+          "Step 3: Auscultation reveals widespread fine inspiratory crackles and wheeze, pointing to lower respiratory tract involvement and small airway inflammation.",
+          "Step 4: The occurrence in December, the peak season for RSV, supports a viral etiology common in infants.",
+          "Step 5: The combination of symptoms and signs in a young infant is classic for bronchiolitis, a common lower respiratory tract infection.",
+          "Step 6: Bronchiolitis is most frequently caused by respiratory syncytial virus (RSV), making RSV bronchiolitis the likely diagnosis.",
+          "Step 7: Management involves supportive care, such as ensuring adequate hydration and oxygenation, with no specific antiviral therapy typically required."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The infant's symptoms of runny nose, cough, fever, poor feeding, tachypnoea, fine inspiratory crackles, and wheeze suggest a lower respiratory tract infection.",
+          "The presence of widespread fine inspiratory crackles and wheeze on auscultation points towards a condition that affects the small airways.",
+          "The age of the infant (4 months) and the time of year (December) suggest a viral aetiology that is more common during the winter months.",
+          "Respiratory Syncytial Virus (RSV) is a common cause of lower respiratory tract infections in infants during the winter months and often presents with symptoms of bronchiolitis.",
+          "The clinical presentation of bronchiolitis, including runny nose, cough, fever, poor feeding, tachypnoea, fine inspiratory crackles, and wheeze, matches the infant's symptoms.",
+          "Bronchiolitis caused by RSV is a leading cause of hospitalisation in infants and is a likely diagnosis in this case."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The presentation of a 4-month-old in winter with URI symptoms progressing to respiratory distress suggests a viral lower respiratory tract infection.",
+          "Key findings of fever, tachypnea, poor feeding, and auscultatory findings of widespread fine crackles and wheeze are highly characteristic of bronchiolitis.",
+          "While pneumonia could also cause fever and crackles, the combination with wheeze in an infant strongly points to bronchiolitis, where inflammation of the bronchioles produces both crackles and wheeze.",
+          "The seasonal timing (December) makes respiratory syncytial virus (RSV) the most common etiological agent for bronchiolitis in this age group.",
+          "Alternative considerations like bacterial pneumonia or cardiac failure lack specific supporting features such as focal chest signs or signs of heart failure.",
+          "The constellation of symptoms, age, season, and physical exam findings consolidates the diagnosis as bronchiolitis, most likely due to RSV.",
+          "Therefore, the correct diagnosis is bronchiolitis (RSV), which guides supportive management as the mainstay of treatment."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The infant's presentation of runny nose, cough, fever, poor feeding, and respiratory distress suggests a lower respiratory tract infection.",
+          "However, the age of 4 months and the specific symptoms of widespread fine inspiratory crackles and wheeze on auscultation are highly suggestive of bronchiolitis, particularly given the seasonal context of December.",
+          "The presence of tachypnoea further supports the diagnosis of bronchiolitis, as it is a common finding in infants with this condition.",
+          "The differential diagnosis includes influenza and pertussis, but the infant's age and clinical presentation make bronchiolitis a more likely diagnosis.",
+          "The presence of a runny nose and cough for 2 days before the development of more severe symptoms is also consistent with bronchiolitis, which often has a prodromal phase.",
+          "While a definitive diagnosis of respiratory syncytial virus (RSV) would require laboratory testing, the clinical presentation and epidemiological context strongly suggest bronchiolitis (RSV) as the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A 4-month-old in winter with runny nose and cough is like a clogged drain—initially minor, but RSV (respiratory syncytial virus) can back up into smaller airways, causing bronchiolitis. ",
+          "Fever and tachypnea with crackles are similar to a storm in a narrow valley (airways): the infection floods the lower airways, creating turbulent airflow (wheezing) and muffled sounds (crackles).",
+          "Poor feeding mirrors a car engine sputtering when fuel is cut off—in this case, the infant’s respiratory effort taxes their energy, reducing appetite and intake. ",
+          "RSV is the usual culprit in infants under 12 months, much like how the flu targets the elderly—viruses exploit vulnerable hosts with immature or weakened immune systems. ",
+          "Management focuses on supportive care (hydration, oxygen) like a lifeguard stabilizing a swimmer in a riptide, avoiding aggressive interventions (e.g., steroids) that are ineffective in viral inflammation. ",
+          "Differential diagnoses (like pneumonia or asthma) are like other weather events—pneumonia might bring high fever and consolidation, while asthma is a recurring pattern, but RSV’s seasonality and age make it the most likely diagnosis. "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q374",
+    "question": "A 23-year-old university student presents with a 4-day history of sore throat, fever, and marked fatigue. On examination, they have bilateral tonsillar exudate and significant cervical lymphadenopathy. They report no cough.",
+    "answer": "Infectious mononucleosis (EBV)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient is a young adult with acute onset of sore throat, fever, marked fatigue, bilateral tonsillar exudate, and significant cervical lymphadenopathy, which are key features of pharyngitis.",
+          "The absence of cough makes common viral upper respiratory infections less likely and shifts the differential towards streptococcal pharyngitis or infectious mononucleosis.",
+          "Marked fatigue and prominent cervical lymphadenopathy in a young adult are particularly suggestive of infectious mononucleosis rather than typical bacterial pharyngitis.",
+          "The epidemiology—being a university student—increases suspicion for Epstein-Barr virus infection due to its transmission through saliva in close-contact settings like dormitories.",
+          "Bilateral tonsillar exudate without cough further supports infectious mononucleosis, as streptococcal pharyngitis often presents with more acute symptoms and less systemic fatigue.",
+          "Based on the clinical presentation, infectious mononucleosis is the leading diagnosis, and confirmation can be obtained through heterophile antibody testing (Monospot) or EBV serology.",
+          "Management involves supportive care with rest, hydration, and analgesics, while avoiding antibiotics like amoxicillin due to the risk of inducing a rash in mononucleosis."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's presentation with sore throat, fever, and marked fatigue, in combination with physical examination findings of bilateral tonsillar exudate and significant cervical lymphadenopathy, suggests a diagnosis of infectious mononucleosis.",
+          "The absence of a cough in the patient makes a diagnosis of acute pharyngitis due to streptococcal infection or another bacterial cause less likely.",
+          "Infectious mononucleosis caused by Epstein-Barr virus (EBV) is a common cause of sore throat and fatigue in young adults.",
+          "The presence of bilateral tonsillar exudate and cervical lymphadenopathy are common physical examination findings in patients with infectious mononucleosis.",
+          "A university student is a high-risk population for infectious mononucleosis due to the close living quarters and social interactions that facilitate the spread of the virus."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's presentation with acute sore throat, fever, fatigue, tonsillar exudate, and cervical lymphadenopathy in a young adult suggests a viral or bacterial pharyngitis.",
+          "Key features guiding the differential are the marked fatigue (more prominent than typical with strep), absence of cough (making viral URI less likely), and the significant lymphadenopathy.",
+          "The leading considerations are group A streptococcal (GAS) pharyngitis and infectious mononucleosis (IM), typically caused by Epstein-Barr virus (EBV).",
+          "While GAS pharyngitis can present with exudate and adenopathy, the degree of fatigue and the patient's age strongly favor IM; GAS is less common in this age group.",
+          "A rapid strep test or throat culture would be reasonable to rule out GAS, but a negative result would further support a viral etiology like EBV.",
+          "The diagnosis of infectious mononucleosis is confirmed by heterophile antibody testing (Monospot), which is positive in most adolescents and adults with acute EBV infection.",
+          "Therefore, the most likely diagnosis is infectious mononucleosis (EBV), and management is supportive with rest, fluids, and avoidance of contact sports due to splenomegaly risk."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Upon presentation of sore throat, fever, and fatigue in this young patient, my initial impression is that of a viral pharyngitis, possibly caused by a common virus such as rhinovirus or coronavirus.",
+          "However, the presence of marked cervical lymphadenopathy and bilateral tonsillar exudate raises the concern for a more serious or atypical infection, and I will consider other possible causes such as infectious mononucleosis.",
+          "The patient's age and symptoms of sore throat, fever, and fatigue are consistent with infectious mononucleosis, which is caused by the Epstein-Barr virus (EBV), and I will consider this diagnosis more seriously.",
+          "The absence of cough in this patient is notable, as it is often present in cases of bacterial pharyngitis, which are typically caused by Streptococcus pyogenes, and further decreases the likelihood of this diagnosis.",
+          "Given the patient's symptoms and examination findings, particularly the presence of bilateral tonsillar exudate and significant cervical lymphadenopathy, I am increasingly confident that the diagnosis is infectious mononucleosis (EBV).",
+          "I will now review the patient's overall clinical picture and consider laboratory tests, such as a monospot test or EBV PCR, to confirm the diagnosis of infectious mononucleosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "University students in close quarters are akin to a dormitory fire: EBV spreads rapidly in similar environments, causing mononucleosis.",
+          "The absence of cough is like a smoke alarm that detects only a smoldering fire (viral) rather than an open flame (bacterial) like strep throat.",
+          "Bilateral tonsillar exudate and posterior cervical lymphadenopathy resemble a 'starry sky' under the microscope—pathognomonic for EBV's lymphocytic infiltration.",
+          "Marked fatigue in mononucleosis is comparable to a car battery drained by a parasitic vampire bat, taking weeks to recharge fully.",
+          "Significant lymphadenopathy without tenderness contrasts with bacterial infections like strep, where lymph nodes are more tender, like a traffic jam versus a construction site with active digging."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q375",
+    "question": "A 35-year-old man presents to his GP with a 2-week history of multiple, small, flesh-coloured, cauliflower-like lesions on the shaft of his penis. He is otherwise well.",
+    "answer": "Anogenital warts (HPV)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient presents with multiple, small, flesh-colored, cauliflower-like lesions on the penile shaft, which are classic for verrucous growths.",
+          "This morphology and location are highly suggestive of anogenital warts, typically caused by human papillomavirus (HPV) infection.",
+          "The absence of systemic symptoms and the benign appearance support a diagnosis of condylomata acuminata, often from low-risk HPV types like 6 and 11.",
+          "Differential diagnoses such as molluscum contagiosum or pearly penile papules are less likely given the cauliflower-like description.",
+          "Clinical diagnosis is usually sufficient, but if atypical, biopsy can rule out conditions like squamous cell carcinoma.",
+          "Management includes discussing treatment options such as topical therapies (e.g., imiquimod) or procedures like cryotherapy.",
+          "Comprehensive care involves screening for other STIs, counseling on transmission, and recommending HPV vaccination for prevention."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of multiple, small, flesh-coloured, cauliflower-like lesions on the shaft of the penis suggests a viral aetiology, specifically human papillomavirus (HPV).",
+          "The patient's age and clinical presentation make a diagnosis of a sexually transmitted infection more likely, given that HPV is a common sexually transmitted virus.",
+          "The characteristic appearance of the lesions, described as cauliflower-like, is typical of anogenital warts caused by HPV.",
+          "The location of the lesions on the shaft of the penis is consistent with the typical sites for anogenital warts.",
+          "The patient's report of a 2-week history suggests a relatively recent acquisition of the infection, which is consistent with the incubation period of HPV.",
+          "A diagnosis of anogenital warts (HPV) is therefore the most likely explanation for the patient's symptoms and clinical findings."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient presents with multiple, small, flesh-coloured, cauliflower-like lesions on the penile shaft, which is a classic description of condylomata acuminata.",
+          "The differential for penile lesions includes infectious causes like herpes simplex virus (HSV), syphilis, and molluscum contagiosum, as well as non-infectious conditions like pearly penile papules.",
+          "Herpes typically presents as painful vesicles or ulcers, not persistent cauliflower-like growths. Syphilitic condylomata lata are broad, flat, and moist, not small and cauliflower-like.",
+          "Molluscum contagiosum presents as smooth, umbilicated papules, not verrucous. Pearly penile papules are smooth, regular papules around the corona, not on the shaft.",
+          "The morphology (cauliflower-like, verrucous), location (anogenital), and appearance (flesh-coloured) are highly characteristic of human papillomavirus (HPV) infection.",
+          "Anogenital warts are caused by specific HPV types, most commonly types 6 and 11, and are typically diagnosed clinically based on their appearance.",
+          "Therefore, the most likely diagnosis is anogenital warts (condylomata acuminata) due to HPV infection."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "Upon initial presentation, I consider the possibility of anogenital warts based on the description of the lesions, but I need to consider other differential diagnoses such as molluscum contagiosum or genital herpes.",
+          "However, upon closer examination, the description of the lesions as flesh-colored and cauliflower-like makes anogenital warts caused by Human Papillomavirus (HPV) more likely, particularly since molluscum contagiosum typically presents with single, umbilicated lesions and genital herpes with vesicular lesions.",
+          "Furthermore, the patient's presentation with multiple lesions and the location on the shaft of the penis is more consistent with anogenital warts, which are often associated with sexual transmission and can occur in multiple sites.",
+          "The patient's otherwise well appearance suggests that the lesions are likely caused by a viral infection, and given the description and location of the lesions, I am increasingly confident that anogenital warts caused by HPV is the most likely diagnosis.",
+          "A thorough review of the literature and clinical guidelines confirms that anogenital warts are a common sexually transmitted infection caused by HPV, and the clinical presentation in this case is consistent with this diagnosis.",
+          "Therefore, I confirm that the most likely diagnosis is anogenital warts (HPV) based on the clinical presentation and the patient's overall health status."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The cauliflower-like appearance of the lesions is akin to a 'mossy outgrowth' seen in HPV warts, distinct from the 'crater-like' sores of syphilis or the 'blisters' of herpes.",
+          "Just as dandelions spread through seeds, HPV spreads via skin-to-skin contact, often remaining dormant before erupting like this sudden cluster of lesions.",
+          "Two weeks is a typical 'incubation period' for HPV warts to become visible, similar to how mold takes time to appear after spores land on a moist surface.",
+          "Diagnosis is like recognizing a 'signature'—the classic morphology here matches HPV's fingerprint more than other STIs, which have different 'visual signatures' (e.g., syphilis’s 'clean ulcer').",
+          "Treatment options mirror tools in a gardener’s belt: cryotherapy 'freezes' the warts, while topical creams 'prune' them back, both targeting the viral root without harming healthy tissue."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q376",
+    "question": "A 6-year-old boy is brought in with a 3-day history of a barky cough and hoarse voice, worse at night. He has mild stridor at rest. His parents say he had a mild cold last week.",
+    "answer": "Croup (viral laryngotracheobronchitis)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's symptoms of barky cough, hoarse voice, and mild stridor at rest suggest upper airway inflammation or obstruction.",
+          "Nocturnal exacerbation of these symptoms is a classic feature of croup, often due to circadian changes in airway tone and secretions.",
+          "The history of a preceding mild cold indicates a viral prodrome, which is typical for viral laryngotracheobronchitis (croup).",
+          "The absence of high fever, drooling, or toxic appearance makes acute epiglottitis or bacterial tracheitis less likely in this setting.",
+          "Given the age, characteristic cough, stridor, and viral history, the diagnosis is most consistent with viral croup (laryngotracheobronchitis).",
+          "Management includes providing cool mist or humidified air, and administering dexamethasone to reduce airway edema and inflammation.",
+          "Parents should be advised on home care measures and to seek immediate medical attention if signs of respiratory distress worsen."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The management goal is to confirm a diagnosis that explains the child's symptoms of a barky cough, hoarse voice, and stridor, which are indicative of an upper airway obstruction.",
+          "The presence of a barky cough and hoarse voice, particularly worsening at night, points towards a condition that causes inflammation and narrowing of the upper airways.",
+          "The recent history of a mild cold suggests a viral etiology for the current condition.",
+          "Croup, or viral laryngotracheobronchitis, is a common childhood condition that matches the described symptoms, often following a viral upper respiratory infection.",
+          "The characteristic symptoms of croup include a barky cough, hoarse voice, and stridor, which are all present in this case, making it a likely diagnosis.",
+          "The age of the child, 6 years old, is also consistent with the typical age range for croup, which usually affects children between 6 months and 5-6 years old.",
+          "Therefore, based on the combination of symptoms and recent viral illness, the most likely diagnosis is croup (viral laryngotracheobronchitis)."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is a young child presenting with acute onset of barky cough, hoarseness, and stridor, which are classic symptoms of upper airway obstruction.",
+          "The history of a preceding mild viral illness (cold) and the nocturnal worsening are highly characteristic of croup (viral laryngotracheobronchitis).",
+          "Alternative causes of acute stridor in a child, such as foreign body aspiration, bacterial tracheitis, or epiglottitis, should be considered but are less likely given the subacute course and presence of a viral prodrome.",
+          "Epiglottitis, in particular, would typically present with a more toxic appearance, high fever, drooling, and a preference for sitting tripod, which are absent here.",
+          "The mild severity, with stridor only at rest and no significant respiratory distress, aligns with mild croup and supports outpatient management.",
+          "Therefore, the most likely diagnosis is croup, caused by parainfluenza virus in most cases, leading to subglottic inflammation and narrowing.",
+          "Management focuses on supportive care, with a single dose of dexamethasone recommended to reduce inflammation and symptom duration."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The presentation of a barky cough and hoarse voice, worse at night, in a child who recently had a mild cold, initially suggests an upper respiratory tract infection.",
+          "However, the presence of mild stridor at rest raises concern for a lower airway obstruction, which is more typical of croup (viral laryngotracheobronchitis) than a simple upper respiratory tract infection.",
+          "Croup often presents with a characteristic barky cough, which is caused by the inflammation of the larynx and trachea, and may be accompanied by stridor, especially at night.",
+          "The child's symptoms of a mild cold followed by worsening respiratory symptoms suggest an evolving infection, which is consistent with the progression of croup from a mild upper respiratory tract infection to a more severe lower airway infection.",
+          "Furthermore, the child's age and the specific symptoms of a barky cough and stridor at rest make croup a more likely diagnosis than other respiratory conditions, such as epiglottitis or bronchiolitis.",
+          "The child's mild stridor and lack of severe respiratory distress or other alarming features, such as difficulty breathing or lethargy, also support a diagnosis of croup rather than a more severe airway obstruction or other complications."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "A barky cough and hoarse voice in a child with a recent cold suggest croup, where viral inflammation narrows the airway like a kinked garden hose restricting water flow. ",
+          "The worsening at night is typical for croup, as post-viral inflammation peaks overnight, similar to a swelling knot in a rope that tightens when left undisturbed. ",
+          "Mild stridor at rest indicates partial airway obstruction, akin to a narrow funnel causing noisy airflow, but not yet life-threatening. ",
+          "The upper airway involvement (larynx, trachea) aligns with the viral laryngotracheobronchitis pattern seen in croup, much like a fire spreading upward through a tree’s trunk. ",
+          "Treatment with humidified air and steroids mirrors deflating a balloon—reducing swelling to open the narrowed airway. ",
+          "The clinical picture contrasts with bacterial epiglottitis (which is more severe and acute) or asthma (which causes wheezing), highlighting croup’s characteristic viral-onset pattern. "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q377",
+    "question": "A 45-year-old severely immunocompromised post-transplant patient is admitted with a 5-day history of worsening dyspnoea, fever, and a new infiltrate on chest X-ray. Bronchoalveolar lavage PCR is positive.",
+    "answer": "Adenovirus pneumonia",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "A severely immunocompromised post-transplant patient presents with dyspnea, fever, and a new chest X-ray infiltrate, suggesting an opportunistic pneumonia.",
+          "In this setting, common pathogens include viruses like cytomegalovirus (CMV), adenovirus, and fungi such as Pneumocystis jirovecii.",
+          "Bronchoalveolar lavage (BAL) is performed to obtain lower respiratory tract samples for microbiological analysis.",
+          "PCR testing on BAL fluid is highly specific for detecting viral pathogens, and a positive result indicates viral nucleic acid presence.",
+          "Adenovirus is a known cause of severe pneumonia in immunocompromised hosts, particularly after organ transplantation.",
+          "The positive BAL PCR for adenovirus confirms the diagnosis of adenovirus pneumonia in this clinical context.",
+          "Management involves initiating antiviral therapy such as cidofovir, providing supportive care, and considering reduction of immunosuppression."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's immunocompromised status makes them susceptible to opportunistic infections, which should be considered in the differential diagnosis.",
+          "The presence of a new infiltrate on chest X-ray and worsening dyspnoea and fever suggests a lower respiratory tract infection.",
+          "The fact that the patient is post-transplant and severely immunocompromised increases the likelihood of viral infections, which are common in this population.",
+          "Adenovirus is a known cause of pneumonia in immunocompromised patients, particularly those who are post-transplant.",
+          "The positive bronchoalveolar lavage PCR result provides strong evidence for the diagnosis of adenovirus pneumonia, as it directly detects the viral genome.",
+          "The combination of clinical presentation, radiographic findings, and positive PCR result leads to the conclusion that adenovirus pneumonia is the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's severe immunocompromised status and new pulmonary infiltrate suggest an opportunistic infection is the most likely cause.",
+          "Common opportunistic pathogens in this setting include Pneumocystis jirovecii, cytomegalovirus (CMV), fungi like Aspergillus, and community-acquired viruses, but the positive BAL PCR narrows the diagnostic focus to a specific viral, bacterial, or fungal pathogen.",
+          "A positive PCR from BAL is highly sensitive and specific for the detected organism; in transplant patients, common PCR-positive viral pneumonias include CMV, adenovirus, respiratory syncytial virus (RSV), influenza, and human metapneumovirus.",
+          "The clinical presentation with a 5-day history of worsening dyspnea and fever is consistent with a viral process, but CMV pneumonia often presents more subacutely and is typically accompanied by systemic symptoms like myelosuppression.",
+          "Adenovirus pneumonia is a known severe, life-threatening infection in severely immunocompromised transplant patients, often presenting with rapidly progressive pneumonitis, fever, and dyspnea, exactly matching this timeline and severity.",
+          "Other common PCR-positive viruses like influenza or RSV are possible but are less characteristically associated with such a severe, rapid course in an adult transplant patient compared to adenovirus.",
+          "Therefore, integrating the clinical context of severe immunocompromise, rapid progression, and a positive BAL PCR, adenovirus pneumonia is the most specific and likely diagnosis."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial presentation of worsening dyspnoea, fever, and a new infiltrate on chest X-ray in an immunocompromised post-transplant patient suggests an opportunistic infection such as Pneumocystis jiroveci pneumonia.",
+          "However, the patient's symptoms and recent history are more consistent with a viral infection given the PCR-positive bronchoalveolar lavage, making Pneumocystis jiroveci pneumonia less likely.",
+          "The patient's severe immunocompromised state increases the risk of viral infections such as CMV and Adenovirus, which are common causes of respiratory illness in post-transplant patients.",
+          "Given the patient's recent history and the bronchoalveolar lavage PCR results, I consider Adenovirus pneumonia a strong possibility, but the lack of specific symptoms such as conjunctivitis or gastroenteritis, which are common in Adenovirus infections, makes me question the diagnosis.",
+          "The patient's recent history of an increased risk of respiratory illnesses in post-transplant patients, combined with the positive PCR results from the bronchoalveolar lavage, suggests Adenovirus pneumonia as a likely diagnosis.",
+          "The clinical presentation of severe dyspnoea, fever, and a new infiltrate on chest X-ray is consistent with viral pneumonia, and Adenovirus is a common cause of viral pneumonia in severely immunocompromised patients.",
+          "Based on the patient's severe immunocompromised state, recent history, and the positive bronchoalveolar lavage PCR results, I conclude that Adenovirus pneumonia is the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: The patient's post-transplant immunocompromised state is like a fortress with weakened defenses, making them vulnerable to opportunistic infections like adenovirus.",
+          "Step 2: Worsening dyspnea and fever with a new chest X-ray infiltrate resemble a smoke alarm sounding in a crowded room—numerous suspects (pneumonia, fungal, or viral) await investigation.",
+          "Step 3: Bronchoalveolar lavage PCR acts as a precision sniffer dog, identifying adenovirus DNA as the culprit in this high-risk environment where broad-spectrum antibiotics often fail.",
+          "Step 4: Adenovirus pneumonia in immunosuppressed patients is akin to a wildfire in a dry forest—rapid progression occurs without timely detection and immune modulation.",
+          "Step 5: The PCR positivity directly links to treatment decisions, much as a DNA match in crime scene analysis confirms the identity of the pathogen requiring targeted intervention.",
+          "Step 6: Management prioritizes reducing immunosuppression and antiviral therapy, similar to turning down the volume on a faulty amplifier to prevent the adenovirus from amplifying unchecked.",
+          "Step 7: Early diagnosis is critical, as adenovirus pneumonia in transplant recipients is like a ticking time bomb—delayed action increases mortality risk exponentially."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q378",
+    "question": "A 32-year-old renal transplant recipient on tacrolimus and mycophenolate presents with a gradual rise in serum creatinine over the past 6 weeks, now with new-onset dysuria. Urinalysis shows decoy cells.",
+    "answer": "BK virus nephropathy",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "A renal transplant recipient on immunosuppressants like tacrolimus and mycophenolate presents with a gradual rise in serum creatinine, indicating allograft dysfunction.",
+          "The new-onset dysuria suggests urinary tract involvement, which in immunocompromised hosts raises suspicion for infections or inflammatory conditions.",
+          "Urinalysis showing decoy cells is a key finding, as these are epithelial cells with viral inclusions often associated with polyomavirus infections such as BK virus.",
+          "BK virus reactivation is a well-known complication in transplant patients due to immunosuppression, leading to BK virus nephropathy, which causes interstitial nephritis and graft dysfunction.",
+          "The clinical presentation of rising creatinine, dysuria, and decoy cells aligns strongly with BK virus nephropathy rather than typical bacterial infections or acute rejection.",
+          "Confirmatory diagnosis involves quantitative PCR for BK virus DNA in plasma or urine and may include renal biopsy to assess for viral inclusions and tissue damage.",
+          "Management primarily involves reducing immunosuppression to allow immune clearance of the virus, along with close monitoring of viral load and renal function to prevent graft loss."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of decoy cells in the urinalysis is a hallmark of BK virus infection, which is a common cause of nephropathy in immunocompromised patients.",
+          "The patient's immunosuppressed state due to tacrolimus and mycophenolate therapy increases the risk of BK virus reactivation and subsequent nephropathy.",
+          "New-onset dysuria in a renal transplant recipient with a gradual rise in serum creatinine over 6 weeks suggests a chronic process affecting the graft.",
+          "The combination of rising creatinine and new-onset dysuria points towards a pathology directly affecting the renal graft.",
+          "BK virus nephropathy is a well-known cause of chronic kidney dysfunction in renal transplant recipients, particularly those on immunosuppressive therapy."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient is an immunocompromised transplant recipient on tacrolimus and mycophenolate, presenting with a gradual rise in creatinine, which suggests a potential chronic allograft issue.",
+          "New-onset dysuria and the finding of decoy cells on urinalysis point strongly to a viral process, as decoy cells are cytopathic changes in urothelial cells classically associated with polyomavirus infection.",
+          "In this specific clinical context, the primary considerations for polyomavirus are BK virus (common) and JC virus (less common in this presentation), with BK virus being a leading cause of nephropathy in renal transplant patients.",
+          "Alternative causes for graft dysfunction, such as acute rejection, calcineurin inhibitor toxicity, or bacterial UTI, are less consistent with the specific finding of decoy cells, though they may co-exist.",
+          "BK virus nephropathy typically presents with this exact triad: renal dysfunction, decoy cells on urinalysis, and positive viral load in blood or urine, making it the most likely diagnosis.",
+          "Confirmatory testing would involve quantitative PCR for BK viremia or viruria, and definitive diagnosis may require allograft biopsy showing viral inclusions and interstitial nephritis.",
+          "Therefore, the most appropriate diagnosis is BK virus nephropathy, guiding management which includes reduction of immunosuppression and possible antiviral therapy."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial presentation of a gradual rise in serum creatinine in a renal transplant recipient suggests possible rejection or calcineurin inhibitor nephrotoxicity.",
+          "However, the presence of decoy cells on urinalysis is highly suggestive of a viral etiology, prompting reconsideration of the diagnosis.",
+          "The combination of decoy cells, new-onset dysuria, and elevated serum creatinine in a patient on tacrolimus and mycophenolate raises suspicion for BK virus nephropathy.",
+          "BK virus nephropathy is a well-known complication of immunosuppressive therapy, especially with the use of calcineurin inhibitors like tacrolimus.",
+          "The clinical presentation and laboratory findings are consistent with BK virus nephropathy, which typically presents with a rise in serum creatinine, hematuria, and the presence of decoy cells in the urine.",
+          "Further investigation with PCR for BK virus in the urine and serum would likely confirm the diagnosis of BK virus nephropathy."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "In transplant recipients, immunosuppression with tacrolimus and mycophenolate acts like a weakened firewall, allowing latent BK virus to reactivate, much like how HIV compromises the immune system to enable opportunistic infections. The gradual rise in creatinine over weeks suggests chronic damage rather than acute rejection. Decoy cells in urinalysis are pathognomonic for BK virus nephropathy, analogous to finding smoke in a chimney indicating a fire below—clear evidence of viral replication in the renal tubules. New-onset dysuria may signal concurrent ureteral stenosis or bladder involvement, similar to how a clogged drain causes water to back up, leading to urinary tract symptoms. The combination of immunosuppression, viral reactivation, and characteristic decoy cells points directly to BK virus nephropathy as the root cause, akin to diagnosing a viral infection in a patient with a suppressed immune response."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q379",
+    "question": "A 45-year-old man with advanced HIV (CD4 count 80) presents with a 3-week history of progressive left-sided weakness and slurred speech. MRI brain shows non-enhancing white matter lesions in the parietal lobe.",
+    "answer": "Progressive multifocal leukoencephalopathy (JC virus)",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The patient's advanced HIV with a CD4 count of 80 indicates severe immunosuppression, predisposing him to opportunistic central nervous system infections.",
+          "The progressive left-sided weakness and slurred speech over 3 weeks suggest a subacute focal neurological process involving the right cerebral hemisphere.",
+          "MRI findings of non-enhancing white matter lesions in the parietal lobe are characteristic of a demyelinating disease rather than a tumor or typical bacterial infection.",
+          "In immunocompromised patients, particularly with HIV, non-enhancing white matter lesions should prioritize suspicion for progressive multifocal leukoencephalopathy (PML) caused by JC virus reactivation.",
+          "The combination of immunosuppression, subacute progressive deficits, and typical MRI features strongly supports a diagnosis of PML.",
+          "Confirmatory testing involves cerebrospinal fluid analysis with PCR for JC virus DNA, which is highly sensitive and specific for PML.",
+          "Management includes optimizing antiretroviral therapy to improve immune reconstitution, as there is no proven specific antiviral treatment for JC virus infection."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The patient's immunocompromised status due to advanced HIV with a low CD4 count of 80 suggests an opportunistic infection.",
+          "The presence of progressive unilateral weakness and slurred speech indicates a focal neurological deficit, suggesting a lesion in the brain that affects motor function.",
+          "The MRI findings of non-enhancing white matter lesions in the parietal lobe point towards a specific set of diagnoses that involve the white matter of the brain without causing significant inflammation or enhancement.",
+          "Given the patient's immunosuppressed state and the characteristics of the brain lesions, a viral etiology is highly plausible.",
+          "The combination of the patient's immunocompromised status, the clinical presentation, and the specific MRI findings is highly suggestive of Progressive Multifocal Leukoencephalopathy (PML), which is caused by the JC virus.",
+          "The lack of enhancement on MRI is consistent with PML, as it typically does not cause significant inflammation or disruption of the blood-brain barrier."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The patient's advanced HIV with a low CD4 count indicates severe immunosuppression, which predisposes him to opportunistic infections and other CNS complications.",
+          "Progressive focal neurological deficits (weakness, slurred speech) over weeks, along with non-enhancing white matter lesions on MRI, point towards a demyelinating process rather than a mass lesion or typical infection.",
+          "In the context of HIV, common causes of such white matter lesions include progressive multifocal leukoencephalopathy (PML), HIV encephalopathy, and less likely, CNS lymphoma or toxoplasmosis (which often enhance).",
+          "The non-enhancing nature of the lesions argues against toxoplasmosis and most lymphomas, which typically show ring enhancement, and the focal deficits are less typical of diffuse HIV encephalopathy.",
+          "PML, caused by JC virus reactivation, classically presents with subacute focal deficits and MRI shows non-enhancing white matter lesions without mass effect, often in the parieto-occipital region.",
+          "Given the clinical and radiographic presentation in a severely immunocompromised host, PML is the most likely diagnosis, and CSF PCR for JC virus would be confirmatory.",
+          "Therefore, the correct diagnosis is progressive multifocal leukoencephalopathy due to JC virus."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial impression is a possible cerebral vasculitis or stroke given the patient's CD4 count of 80, suggesting an immunocompromised state.",
+          "However, the non-enhancing white matter lesions on MRI do not typically suggest an infectious process with significant immune system response.",
+          "The patient's immunocompromised state and the presence of white matter lesions on MRI raise the suspicion of a viral pathogen, but the lack of contrast enhancement narrows the differential diagnosis.",
+          "The presence of progressive neurological symptoms and the MRI findings are concerning for a viral pathogen that targets immunocompromised patients, such as the JC virus.",
+          "The JC virus is a known cause of progressive multifocal leukoencephalopathy (PML), a rare but serious demyelinating disease of the central nervous system.",
+          "The JC virus is typically associated with CD4 counts below 100, which aligns with the patient's immunocompromised state and further supports the diagnosis of PML.",
+          "The diagnosis of PML due to JC virus is confirmed by the combination of the patient's immunocompromised status, progressive neurological symptoms, and non-enhancing white matter lesions on MRI."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "Step 1: Advanced HIV with CD4 < 100 creates an immunosuppressed 'ecosystem' where JC virus (PML causative agent) proliferates unchecked, similar to a mold overgrowing in a damp, dark basement (the brain's white matter).",
+          "Step 2: Non-enhancing MRI lesions in the parietal white matter resemble 'silent erosion' of myelin sheaths by JC virus, analogous to termites hollowing wood without visible surface damage.",
+          "Step 3: Progressive left-sided weakness and slurred speech map to parietal lobe involvement, like a miswired electrical grid disrupting specific brain circuits controlling motor and speech functions.",
+          "Step 4: Unlike ring-enhancing toxoplasmosis or lymphoma (which thrive in immunosuppression and show inflammation markers), PML's non-enhancing lesions signal a 'quiet invasion' without immune system activation.",
+          "Step 5: The 3-week progression mirrors a slow-burn wildfire in neural pathways, progressively disconnecting brain regions responsible for motor coordination and speech articulation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q380",
+    "question": "A 4-year-old unvaccinated child is brought in with a 3-day history of high fever, conjunctivitis, runny nose, and cough. Today, a red, blotchy rash has appeared on the face and is spreading downwards. Small white spots are noted on the buccal mucosa.",
+    "answer": "Measles",
+    "reasoning_chains": [
+      {
+        "model": "chain_of_thought",
+        "steps": [
+          "The child's presentation with high fever, conjunctivitis, coryza, and cough aligns with the classic prodromal phase of measles.",
+          "The development of a red, blotchy rash that begins on the face and spreads caudally is characteristic of the measles exanthem.",
+          "The observation of small white spots on the buccal mucosa, known as Koplik's spots, is pathognomonic for measles and typically appears before the rash.",
+          "The child's unvaccinated status significantly increases the risk for measles, a vaccine-preventable disease, in the context of these symptoms.",
+          "The combination of prodromal symptoms, Koplik's spots, and the typical rash progression confirms the clinical diagnosis of measles.",
+          "Immediate management includes isolating the patient to prevent transmission and reporting to public health authorities due to the highly contagious nature of measles.",
+          "Supportive care is essential, focusing on hydration, antipyretics for fever, and monitoring for complications such as pneumonia or encephalitis."
+        ]
+      },
+      {
+        "model": "backward_think",
+        "steps": [
+          "The presence of a red, blotchy rash that started on the face and spread downwards suggests a viral exanthem, with measles being a classic example.",
+          "The combination of high fever, conjunctivitis, runny nose, and cough in an unvaccinated child suggests a viral respiratory infection, which is consistent with measles.",
+          "The appearance of small white spots on the buccal mucosa, known as Koplik spots, is a pathognomonic sign of measles.",
+          "The child's lack of vaccination increases the likelihood of measles, as vaccination is a key preventive measure for this disease.",
+          "The constellation of symptoms, including the prodrome of fever, respiratory symptoms, and conjunctivitis followed by the characteristic rash and Koplik spots, is highly suggestive of measles.",
+          "The age of the child and the specific combination of symptoms make other viral exanthems, such as rubella and roseola, less likely."
+        ]
+      },
+      {
+        "model": "tree_of_thought",
+        "steps": [
+          "The presentation includes a prodrome of high fever, conjunctivitis, coryza, and cough, followed by a descending maculopapular rash, which is classic for measles.",
+          "The presence of Koplik spots (small white spots on the buccal mucosa) is pathognomonic for measles and strongly supports this diagnosis.",
+          "The child being unvaccinated significantly increases the pre-test probability for measles, a vaccine-preventable disease.",
+          "Alternative diagnoses like rubella, scarlet fever, or roseola should be considered but lack the full constellation of symptoms and the specific Koplik spots.",
+          "Rubella typically presents with a milder prodrome, posterior auricular lymphadenopathy, and no Koplik spots.",
+          "Scarlet fever would present with a sandpaper-like rash, circumoral pallor, and a strawberry tongue, not coryza or Koplik spots.",
+          "Given the pathognomonic findings and epidemiological risk, measles is the definitive diagnosis, requiring immediate isolation and public health notification."
+        ]
+      },
+      {
+        "model": "reflective_reasoning",
+        "steps": [
+          "The initial clinical impression suggests a diagnosis of influenza or another viral respiratory infection based on the child's symptoms of high fever, runny nose, and cough.",
+          "However, the presence of conjunctivitis, a red, blotchy rash, and small white spots on the buccal mucosa warrants a reconsideration of the diagnosis, as these symptoms are more suggestive of a viral exanthem.",
+          "The child's unvaccinated status and the classic triad of high fever, conjunctivitis, and a rash that progresses downward from the head, along with the characteristic Koplik spots on the buccal mucosa, strongly suggest a diagnosis of measles.",
+          "The red, blotchy rash is a key diagnostic feature of measles, which typically appears 3-5 days after the onset of fever and spreads downward from the head to the trunk and limbs.",
+          "Measles is a highly contagious viral illness that is often associated with a high fever, conjunctivitis, cough, and a characteristic rash, making it a likely diagnosis in this unvaccinated child.",
+          "The differential diagnosis for this child's symptoms might include rubella or roseola, but the presence of Koplik spots and the progression of the rash from the head downward make measles the most likely diagnosis."
+        ]
+      },
+      {
+        "model": "analogical_reasoning",
+        "steps": [
+          "The child's symptoms—high fever, conjunctivitis, runny nose, and cough—form a classic viral 'trifecta' of upper respiratory and ocular inflammation, akin to a red flag signaling a specific direction in a storm.",
+          "The red, blotchy rash starting on the face and spreading downward mirrors the pattern of a sunburn that progresses from the most exposed skin to the body, a hallmark of measles.",
+          "The presence of small white spots on the buccal mucosa (Koplik spots) acts like a diagnostic fingerprint, uniquely identifying measles among other viral rashes.",
+          "The 3-day timeline of symptoms before the rash aligns with the 'prodrome' phase of measles, similar to a delayed fireworks show where initial sparks precede the grand display.",
+          "The unvaccinated status of the child removes a critical protective barrier, making susceptibility to measles as inevitable as a puddle in a dry climate after rainfall."
+        ]
+      }
+    ]
+  }
+]
