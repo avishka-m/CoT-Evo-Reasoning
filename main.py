@@ -5,8 +5,8 @@ Entry point for the CoT-Evo GA Medical Reasoning System.
 
 Batch Mode (default):
     Iterates over every JSON file in the `data/` folder.
-    If a matching output file already exists in `output/`, that file is SKIPPED.
-    Results are saved to `output/<same_filename>` for each input.
+    Files already having a matching output are SKIPPED.
+    Up to MAX_PARALLEL_FILES files are processed concurrently.
 
 Single-file override (optional):
     python main.py --data data/medical_qa.json
@@ -17,8 +17,9 @@ Single-file override (optional):
 import argparse
 import os
 import glob
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from config import GA_GENERATIONS, GA_POPULATION_SIZE, OUTPUT_DIR, DATA_DIR
+from config import GA_GENERATIONS, GA_POPULATION_SIZE, OUTPUT_DIR, DATA_DIR, MAX_PARALLEL_FILES
 import config  # allow overriding via CLI args
 
 from data_loader import load_dataset
@@ -70,14 +71,11 @@ def parse_args():
 def collect_pending_files(data_dir: str, output_dir: str):
     """
     Discover all .json files in data_dir.
-    Return a list of (input_path, output_path) tuples for files that do NOT
-    yet have a corresponding output file.
+    Return (input_path, output_path) tuples for files that do NOT yet have output.
     """
     os.makedirs(output_dir, exist_ok=True)
 
-    all_input_files = sorted(
-        glob.glob(os.path.join(data_dir, "*.json"))
-    )
+    all_input_files = sorted(glob.glob(os.path.join(data_dir, "*.json")))
 
     if not all_input_files:
         print(f"[BatchRunner] No JSON files found in '{data_dir}'.")
@@ -85,8 +83,8 @@ def collect_pending_files(data_dir: str, output_dir: str):
 
     pending = []
     for input_path in all_input_files:
-        filename    = os.path.basename(input_path)          # e.g. medical_qa.json
-        output_path = os.path.join(output_dir, filename)   # output/medical_qa.json
+        filename    = os.path.basename(input_path)
+        output_path = os.path.join(output_dir, filename)
 
         if os.path.exists(output_path):
             print(f"[BatchRunner] SKIP  '{filename}'  →  output already exists.")
@@ -104,8 +102,9 @@ def process_single_file(
     verbose: bool,
 ):
     """Load dataset from input_path, evolve it, save to output_path."""
+    filename = os.path.basename(input_path)
     print("\n" + "=" * 60)
-    print(f"  Processing : {os.path.basename(input_path)}")
+    print(f"  Processing : {filename}")
     print(f"  Output     : {output_path}")
     print("=" * 60)
 
@@ -122,7 +121,7 @@ def process_single_file(
     )
 
     # Print best result for each question
-    print("\n\n  -- FINAL EVOLVED REASONING --\n")
+    print(f"\n\n  -- FINAL EVOLVED REASONING ({filename}) --\n")
     for r in results:
         best = r["best_reasoning"]
         print(f"  ID      : {r['id']}")
@@ -163,8 +162,11 @@ def main():
     print("=" * 60)
     print("  CoT-Evo: Medical Reasoning GA System")
     print("=" * 60)
-    print(f"  Generations : {args.generations}")
-    print(f"  Population  : {args.population}")
+    print(f"  Generations      : {args.generations}")
+    print(f"  Population       : {args.population}")
+    print(f"  Parallel evals   : {config.MAX_PARALLEL_EVALS}")
+    print(f"  Parallel questions: {config.MAX_PARALLEL_QUESTIONS}")
+    print(f"  Parallel files   : {MAX_PARALLEL_FILES}")
     print("=" * 60)
 
     # ── Mode: single file explicitly provided ──────────────────────────────────
@@ -172,9 +174,9 @@ def main():
         output_path = args.output or os.path.join(
             OUTPUT_DIR, os.path.basename(args.data)
         )
-        print(f"  Mode        : single file")
-        print(f"  Dataset     : {args.data}")
-        print(f"  Output      : {output_path}\n")
+        print(f"  Mode   : single file")
+        print(f"  Dataset: {args.data}")
+        print(f"  Output : {output_path}\n")
         process_single_file(
             input_path=args.data,
             output_path=output_path,
@@ -184,8 +186,7 @@ def main():
         return
 
     # ── Mode: batch — process all files in data/ ───────────────────────────────
-    print(f"  Mode        : batch (all files in '{DATA_DIR}/')")
-    print()
+    print(f"  Mode   : batch (all files in '{DATA_DIR}/')\n")
 
     pending = collect_pending_files(DATA_DIR, OUTPUT_DIR)
 
@@ -193,29 +194,39 @@ def main():
         print("\n[BatchRunner] Nothing to process. All files already have outputs.")
         return
 
-    print(f"\n[BatchRunner] {len(pending)} file(s) to process.\n")
+    total = len(pending)
+    print(f"\n[BatchRunner] {total} file(s) to process  "
+          f"(up to {MAX_PARALLEL_FILES} concurrently).\n")
 
-    total    = len(pending)
-    success  = 0
-    failed   = 0
+    success = 0
+    failed  = 0
 
-    for idx, (input_path, output_path) in enumerate(pending, start=1):
-        filename = os.path.basename(input_path)
-        print(f"\n[BatchRunner] ── File {idx}/{total}: {filename} ──")
-        try:
-            result = process_single_file(
-                input_path=input_path,
-                output_path=output_path,
-                generations=args.generations,
-                verbose=verbose,
-            )
-            if result is not None:
-                success += 1
-            else:
+    # ── Parallel file processing ───────────────────────────────────────────────
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_FILES) as executor:
+        futures = {
+            executor.submit(
+                process_single_file,
+                input_path,
+                output_path,
+                args.generations,
+                verbose,
+            ): os.path.basename(input_path)
+            for input_path, output_path in pending
+        }
+
+        for future in as_completed(futures):
+            filename = futures[future]
+            try:
+                result = future.result()
+                if result is not None:
+                    print(f"[BatchRunner] ✓ Finished: {filename}")
+                    success += 1
+                else:
+                    print(f"[BatchRunner] ✗ Skipped (no data): {filename}")
+                    failed += 1
+            except Exception as e:
+                print(f"[BatchRunner] ERROR processing '{filename}': {e}")
                 failed += 1
-        except Exception as e:
-            print(f"[BatchRunner] ERROR processing '{filename}': {e}")
-            failed += 1
 
     print("\n" + "=" * 60)
     print("  BATCH COMPLETE")

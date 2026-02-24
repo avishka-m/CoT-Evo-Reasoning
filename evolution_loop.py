@@ -5,19 +5,27 @@ Main CoT-Evo Optimization Loop (panel d of the diagram):
 
   For each question:
     For each generation:
-      1. Evaluate fitness  (DeepSeek: 5 criteria × A/B/C/D)
-      2. Compute embeddings (sentence-transformer)
+      1. Evaluate fitness  (DeepSeek: 5 criteria × A/B/C/D)   ← now PARALLEL
+      2. Compute embeddings (sentence-transformer)              ← now on GPU
       3. Novelty & Reward Selection  (KNN N(t) + L(t) → Pareto front)
       4. Recombination + Mutation (cross-chain + Add/Delete/Innovate)
       5. Track best candidate per generation
     → Output: best evolved reasoning chain + full fitness breakdown
+
+Speed changes (core GA logic 100% unchanged):
+  • _evaluate_and_embed(): evaluates all unevaluated candidates CONCURRENTLY
+    via ThreadPoolExecutor — same evaluate_reasoning() calls, just fired in parallel.
+  • run_evolution(): evolves all questions CONCURRENTLY via ThreadPoolExecutor —
+    same evolve_question() per-question logic, just not sequential.
 """
 
 import os
 import json
 import copy
 import random
+import threading
 from typing import List, Dict, Any
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from tqdm import tqdm
 
@@ -28,6 +36,8 @@ from config import (
     GA_CROSSOVER_RATE,
     GA_ELITE_SIZE,
     OUTPUT_DIR,
+    MAX_PARALLEL_EVALS,
+    MAX_PARALLEL_QUESTIONS,
 )
 from data_loader import get_all_chains_for_record
 from embeddings import embed_texts
@@ -38,33 +48,51 @@ from genetic_operators import recombine, apply_mutation
 from knowledge_augmenter import augment_candidate_pool
 
 
+# ── Thread-safe incremental save lock ─────────────────────────────────────────
+_save_lock = threading.Lock()
+
+
 def _evaluate_and_embed(
     candidates: List[Dict],
     question: str,
     answer: str,
 ) -> List[Dict]:
-    """Evaluate fitness and compute embeddings for all candidates lacking them."""
-    texts = []
-    unevaluated_indices = []
+    """
+    Evaluate fitness and compute embeddings for all candidates lacking them.
 
-    for i, c in enumerate(candidates):
-        if "fitness_score" not in c:
-            unevaluated_indices.append(i)
-            texts.append(c["text"])
+    SPEED: fitness evaluations (DeepSeek API calls) now fire CONCURRENTLY via
+    ThreadPoolExecutor. API calls are I/O-bound so the GIL is not a bottleneck.
+    Core logic (evaluate_reasoning / embed_texts) is 100% unchanged.
+    """
+    unevaluated = [
+        (i, c) for i, c in enumerate(candidates)
+        if "fitness_score" not in c
+    ]
 
-    # ── Fitness evaluation via DeepSeek ───────────────────────────────────────
-    for i in unevaluated_indices:
-        c = candidates[i]
-        print(f"    [Eval] Evaluating steps (Doctor Criteria) for: {c['model']}")
-        result = evaluate_reasoning(question, answer, c["text"])
-        c["fitness_score"]           = result["fitness_score"]
-        c["per_step"]                = result.get("per_step", [])
-        c["clinical_criteria_mean"]  = result.get("clinical_criteria_mean", 0)
-        c["evidence_score"]          = result.get("evidence_score", 0)
-        c["evidence_grade"]          = result.get("evidence_grade", "D")
+    if unevaluated:
+        # ── Parallel fitness evaluation ────────────────────────────────────────
+        with ThreadPoolExecutor(max_workers=MAX_PARALLEL_EVALS) as executor:
+            futures = {
+                executor.submit(evaluate_reasoning, question, answer, c["text"]): (i, c)
+                for i, c in unevaluated
+            }
+            for future in as_completed(futures):
+                i, c = futures[future]
+                try:
+                    result = future.result()
+                    c["fitness_score"]          = result["fitness_score"]
+                    c["per_step"]               = result.get("per_step", [])
+                    c["clinical_criteria_mean"] = result.get("clinical_criteria_mean", 0)
+                    c["evidence_score"]         = result.get("evidence_score", 0)
+                    c["evidence_grade"]         = result.get("evidence_grade", "D")
+                    print(f"    [Eval] Done (parallel) — {c['model']}: fitness={c['fitness_score']:.4f}")
+                except Exception as e:
+                    print(f"    [Eval] ERROR for candidate {i}: {e}")
+                    c["fitness_score"] = 0.0
+                    c["per_step"]      = []
 
-    # ── Behavioral embeddings ─────────────────────────────────────────────────
-    all_texts = [c["text"] for c in candidates]
+    # ── Behavioral embeddings (GPU-accelerated via embeddings.py) ─────────────
+    all_texts  = [c["text"] for c in candidates]
     embeddings = embed_texts(all_texts)
     for i, c in enumerate(candidates):
         c["embedding"] = embeddings[i]
@@ -87,21 +115,18 @@ def doctor_validation_gate(candidate: Dict[str, Any]) -> bool:
     """
         
     for step in per_step:
-        # Check for Level D + Safety-Relevant
-        # Safety relevance is high if safety_utility score > 0 (it means it impacts patient safety)
-        lvl = step.get("evidence_level", "D")
+        lvl             = step.get("evidence_level", "D")
         clinical_scores = step.get("clinical_scores", {})
-        safety_utility = clinical_scores.get("safety_utility", 0.0)
-        
-        if lvl == "D" and safety_utility > 2.0: # If it impacts safety significantly but has no evidence
+        safety_utility  = clinical_scores.get("safety_utility", 0.0)
+
+        if lvl == "D" and safety_utility > 2.0:
             print(f"    [Gate] REJECTED: Step {step.get('step_index')} is Level D but safety-critical.")
             return False
-            
-        # Ensure minimum clinical validity for all steps
+
         if clinical_scores.get("clinical_validity", 0.0) < 2.0:
             print(f"    [Gate] REJECTED: Step {step.get('step_index')} has low clinical validity.")
             return False
-            
+
     return True
 
 
@@ -113,10 +138,11 @@ def evolve_question(
     """
     Run the full CoT-Evo GA for a single QA record.
     Includes Stage 2: Knowledge Augmentation.
+    (This function is unchanged in logic — it's called concurrently by run_evolution.)
     """
-    question   = record["question"]
-    answer     = record["answer"]
-    record_id  = record["id"]
+    question  = record["question"]
+    answer    = record["answer"]
+    record_id = record["id"]
 
     if verbose:
         print(f"\n{'='*60}")
@@ -124,13 +150,13 @@ def evolve_question(
         print(f"  Q: {question[:80]}...")
         print(f"{'='*60}")
 
-    # ── Stage 1: Initialize candidates ───────────────────────────────────────
+    # ── Stage 1: Initialize candidates ────────────────────────────────────────
     initial_candidates = get_all_chains_for_record(record)
     for c in initial_candidates:
         c["generation"] = 0
         c["origin"]     = "initial"
 
-    # ── Stage 2: Knowledge Augmentation ──────────────────────────────────────
+    # ── Stage 2: Knowledge Augmentation ───────────────────────────────────────
     if verbose:
         print(f"  [Stage 2] Augmenting pool with clinical knowledge...")
     augmented_candidates = augment_candidate_pool(record, initial_candidates)
@@ -147,7 +173,7 @@ def evolve_question(
 
         all_candidates = pool.get_all()
 
-        # Step 1 & 2: Evaluate fitness + embed
+        # Step 1 & 2: Evaluate fitness + embed  (parallel inside)
         all_candidates = _evaluate_and_embed(all_candidates, question, answer)
 
         # Step 3 & 4: Novelty & Reward Selection → parents
@@ -163,13 +189,13 @@ def evolve_question(
         # Track history
         best_now = sorted(all_candidates, key=lambda c: c["fitness_score"], reverse=True)[0]
         history.append({
-            "generation":    gen + 1,
-            "best_fitness":  best_now["fitness_score"],
-            "best_model":    best_now["model"],
-            "pool_size":     pool.size(),
+            "generation":   gen + 1,
+            "best_fitness": best_now["fitness_score"],
+            "best_model":   best_now["model"],
+            "pool_size":    pool.size(),
         })
 
-        # ── Elitism ────────────────────────────────────────────────────────────
+        # ── Elitism ───────────────────────────────────────────────────────────
         elite = pool.get_top_k(GA_ELITE_SIZE)
 
         # ── Step 5: Recombination + Mutation ──────────────────────────────────
@@ -180,7 +206,6 @@ def evolve_question(
             child = apply_mutation(child, question, answer, GA_MUTATION_RATE)
             offspring.append(child)
 
-            # Reverse recombination
             child2 = recombine(parents[1], parents[0])
             child2 = apply_mutation(child2, question, answer, GA_MUTATION_RATE)
             offspring.append(child2)
@@ -204,22 +229,22 @@ def evolve_question(
 
         pool = new_pool
 
-    # Final selection: Get all candidates and find the best one that passes Stage 6 gate
+    # Final selection — same Doctor Gate logic unchanged
     final_candidates = pool.get_all()
     final_candidates = _evaluate_and_embed(final_candidates, question, answer)
     sorted_final = sorted(final_candidates, key=lambda c: c["fitness_score"], reverse=True)
-    
+
     best_candidate = None
     if verbose:
         print(f"  [Stage 6] Validating top candidates through Doctor Gate...")
-        
+
     for cand in sorted_final:
         if doctor_validation_gate(cand):
             best_candidate = cand
             break
-            
+
     if best_candidate is None:
-        best_candidate = sorted_final[0] # Fallback if none pass (should be avoided)
+        best_candidate = sorted_final[0]
         print("    [WARNING] No candidate passed Doctor Gate. Falling back to highest fitness.")
 
     return {
@@ -227,16 +252,16 @@ def evolve_question(
         "question": question,
         "answer":   answer,
         "best_reasoning": {
-            "model":          best_candidate["model"],
-            "steps":          best_candidate["steps"],
-            "text":           best_candidate["text"],
-            "fitness_score":  best_candidate["fitness_score"],
-            "clinical_criteria_mean": best_candidate.get("clinical_criteria_mean", 0),
-            "evidence_score": best_candidate.get("evidence_score", 0),
-            "evidence_grade": best_candidate.get("evidence_grade", "D"),
-            "per_step":       best_candidate.get("per_step", []),
-            "generation":     best_candidate.get("generation", 0),
-            "origin":         best_candidate.get("origin", "unknown"),
+            "model":                    best_candidate["model"],
+            "steps":                    best_candidate["steps"],
+            "text":                     best_candidate["text"],
+            "fitness_score":            best_candidate["fitness_score"],
+            "clinical_criteria_mean":   best_candidate.get("clinical_criteria_mean", 0),
+            "evidence_score":           best_candidate.get("evidence_score", 0),
+            "evidence_grade":           best_candidate.get("evidence_grade", "D"),
+            "per_step":                 best_candidate.get("per_step", []),
+            "generation":               best_candidate.get("generation", 0),
+            "origin":                   best_candidate.get("origin", "unknown"),
         },
         "evolution_history": history,
     }
@@ -248,22 +273,45 @@ def run_evolution(
     output_path: str = None,
     verbose: bool = True,
 ) -> List[Dict[str, Any]]:
-    """Run CoT-Evo GA Optimization."""
+    """
+    Run CoT-Evo GA Optimization.
+
+    SPEED: questions are now evolved CONCURRENTLY via ThreadPoolExecutor.
+    Each question's full evolve_question() call runs in a separate thread.
+    Incremental saves are protected by a threading.Lock.
+    Core evolve_question() logic is 100% unchanged.
+    """
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     if output_path is None:
         output_path = os.path.join(OUTPUT_DIR, "evolved_reasoning.json")
 
-    results = []
-    for record in tqdm(dataset, desc="Evolving questions"):
-        result = evolve_question(record, generations=generations, verbose=verbose)
-        results.append(result)
+    results = [None] * len(dataset)
 
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(results, f, indent=2, ensure_ascii=False)
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_QUESTIONS) as executor:
+        futures = {
+            executor.submit(evolve_question, record, generations, verbose): idx
+            for idx, record in enumerate(dataset)
+        }
 
+        for future in tqdm(as_completed(futures), total=len(dataset), desc="Evolving questions"):
+            idx = futures[future]
+            try:
+                result = future.result()
+                results[idx] = result
+
+                # ── Incremental save (thread-safe) ─────────────────────────
+                with _save_lock:
+                    completed = [r for r in results if r is not None]
+                    with open(output_path, "w", encoding="utf-8") as f:
+                        json.dump(completed, f, indent=2, ensure_ascii=False)
+
+            except Exception as e:
+                print(f"\n[EvolutionLoop] ERROR evolving record {idx}: {e}")
+
+    final_results = [r for r in results if r is not None]
     print(f"\n[EvolutionLoop] Done! Results saved to: {output_path}")
-    print(_summary_stats(results))
-    return results
+    print(_summary_stats(final_results))
+    return final_results
 
 
 def _summary_stats(results: List[Dict]) -> str:

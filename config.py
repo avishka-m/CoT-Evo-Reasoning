@@ -58,3 +58,9 @@ LEVEL_WEIGHTS = {
 # ── Paths ──────────────────────────────────────────────────────────────────────
 DATA_DIR    = "data"
 OUTPUT_DIR  = "output"
+
+# ── Parallelism ─────────────────────────────────────────────────────────────────
+# Controls how many things run concurrently. Tune down if you hit API rate limits.
+MAX_PARALLEL_EVALS     = 5   # concurrent DeepSeek fitness-eval calls per generation
+MAX_PARALLEL_QUESTIONS = 3   # concurrent question evolutions per file
+MAX_PARALLEL_FILES     = 2   # concurrent files processed at once

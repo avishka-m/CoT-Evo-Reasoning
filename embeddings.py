@@ -8,22 +8,33 @@ Model: abhinand/MedEmbed-base-v0.1  (HuggingFace, cached locally after first dow
     (diagnoses, symptoms, drug names, lab results) vs generic models.
 
 Used for computing KNN novelty scores in the Novelty-Driven Candidate Selection stage.
+
+Speed note: automatically uses CUDA (RTX 3050) when available; falls back to CPU.
+The singleton is protected by a threading.Lock so concurrent threads can't double-load.
 """
 
+import threading
 import numpy as np
+import torch
 from sentence_transformers import SentenceTransformer
 from typing import List
 from config import EMBEDDING_MODEL
 
-# Singleton model — loaded once, reused across all calls
+# ── Auto-detect best available device ─────────────────────────────────────────
+DEVICE: str = "cuda" if torch.cuda.is_available() else "cpu"
+
+# Singleton model + thread-safe lock
 _model: SentenceTransformer = None
+_model_lock = threading.Lock()
 
 
 def _get_model() -> SentenceTransformer:
     global _model
-    if _model is None:
-        print(f"[Embeddings] Loading model: {EMBEDDING_MODEL}")
-        _model = SentenceTransformer(EMBEDDING_MODEL)
+    if _model is None:                         # fast path (no lock needed after init)
+        with _model_lock:
+            if _model is None:                 # double-checked locking
+                print(f"[Embeddings] Loading model: {EMBEDDING_MODEL}  (device={DEVICE})")
+                _model = SentenceTransformer(EMBEDDING_MODEL, device=DEVICE)
     return _model
 
 
